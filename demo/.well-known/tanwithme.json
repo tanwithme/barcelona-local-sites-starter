@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "marker": "tanwithme",
+  "generator": "barcelona-local-sites-starter",
+  "city": "Barcelona",
+  "languages": [
+    "ca",
+    "es",
+    "en"
+  ],
+  "canonicalOrigin": null,
+  "status": "demo",
+  "ownerApproved": false
+}

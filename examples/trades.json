@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "status": "demo",
+  "origin": null,
+  "business": {
+    "name": "Reparacions de mostra",
+    "sector": "trades",
+    "neighbourhood": "Sants",
+    "city": "Barcelona",
+    "address": null,
+    "phone": null,
+    "whatsapp": null,
+    "mapUrl": null,
+    "instagramUrl": null,
+    "hours": [],
+    "priceNote": {
+      "ca": "Preus pendents de confirmar.",
+      "es": "Precios pendientes de confirmar.",
+      "en": "Prices awaiting confirmation."
+    },
+    "visitMode": "service-area",
+    "byAppointment": false
+  },
+  "provenance": {
+    "enabled": true
+  },
+  "approvals": {
+    "facts": false,
+    "assets": false,
+    "legal": false,
+    "publication": false,
+    "provenance": false,
+    "locales": {
+      "ca": false,
+      "es": false,
+      "en": false
+    }
+  },
+  "review": {
+    "version": null,
+    "approvedVersion": null,
+    "previewUrl": null,
+    "qaPassed": false,
+    "ownerHandoffReady": false,
+    "evidence": [],
+    "approvedDigest": null
+  },
+  "legal": {
+    "ca": {
+      "notice": null,
+      "privacy": null
+    },
+    "es": {
+      "notice": null,
+      "privacy": null
+    },
+    "en": {
+      "notice": null,
+      "privacy": null
+    }
+  },
+  "assets": [],
+  "copy": {
+    "ca": {
+      "eyebrow": "Sants, Barcelona",
+      "headline": "Què cal reparar?",
+      "intro": "Una pàgina de mostra per aprendre a presentar un negoci del barri amb claredat. No correspon a cap establiment real.",
+      "sectionTitle": "Feines que podem valorar",
+      "visitTitle": "On treballem",
+      "visitBody": "Confirma amb el negoci la zona de servei, l’horari de contacte i les possibles despeses de desplaçament.",
+      "contactTitle": "Parlem-ne",
+      "contactBody": "Una consulta no confirma cap cita, pressupost ni termini. Espera la resposta del negoci.",
+      "cta": "Demana pressupost",
+      "message": "Hola, voldria consultar una reparació.",
+      "items": [
+        {
+          "name": "Petites reparacions",
+          "description": "Servei de mostra: confirma’n l’abast, la durada i el preu.",
+          "id": "item-1"
+        },
+        {
+          "name": "Manteniment",
+          "description": "Servei de mostra: confirma’n l’abast, la durada i el preu.",
+          "id": "item-2"
+        },
+        {
+          "name": "Consulta prèvia",
+          "description": "Servei de mostra: confirma’n l’abast, la durada i el preu.",
+          "id": "item-3"
+        }
+      ]
+    },
+    "es": {
+      "eyebrow": "Sants, Barcelona",
+      "headline": "¿Qué hay que reparar?",
+      "intro": "Una página de muestra para aprender a presentar un negocio del barrio con claridad. No corresponde a ningún establecimiento real.",
+      "sectionTitle": "Trabajos que podemos valorar",
+      "visitTitle": "Dónde trabajamos",
+      "visitBody": "Confirma con el negocio la zona de servicio, el horario de contacto y los posibles gastos de desplazamiento.",
+      "contactTitle": "Hablemos",
+      "contactBody": "Una consulta no confirma una cita, un presupuesto ni un plazo. Espera la respuesta del negocio.",
+      "cta": "Pide presupuesto",
+      "message": "Hola, me gustaría consultar una reparación.",
+      "items": [
+        {
+          "name": "Pequeñas reparaciones",
+          "description": "Servicio de muestra: confirma el alcance, la duración y el precio.",
+          "id": "item-1"
+        },
+        {
+          "name": "Mantenimiento",
+          "description": "Servicio de muestra: confirma el alcance, la duración y el precio.",
+          "id": "item-2"
+        },
+        {
+          "name": "Consulta previa",
+          "description": "Servicio de muestra: confirma el alcance, la duración y el precio.",
+          "id": "item-3"
+        }
+      ]
+    },
+    "en": {
+      "eyebrow": "Sants, Barcelona",
+      "headline": "What needs fixing?",
+      "intro": "A sample page for learning how to present a local business clearly. This does not represent a real venue.",
+      "sectionTitle": "Jobs we can assess",
+      "visitTitle": "Where we work",
+      "visitBody": "Confirm the service area, contact hours and any call-out charges with the business.",
+      "contactTitle": "Let’s talk",
+      "contactBody": "An enquiry does not confirm an appointment, quote or timescale. Wait for the business to reply.",
+      "cta": "Request a quote",
+      "message": "Hello, I would like to ask about a repair.",
+      "items": [
+        {
+          "name": "Small repairs",
+          "description": "Sample service: confirm the scope, duration and price.",
+          "id": "item-1"
+        },
+        {
+          "name": "Maintenance",
+          "description": "Sample service: confirm the scope, duration and price.",
+          "id": "item-2"
+        },
+        {
+          "name": "Initial enquiry",
+          "description": "Sample service: confirm the scope, duration and price.",
+          "id": "item-3"
+        }
+      ]
+    }
+  },
+  "catalog": [
+    {
+      "id": "item-1",
+      "priceEUR": null
+    },
+    {
+      "id": "item-2",
+      "priceEUR": null
+    },
+    {
+      "id": "item-3",
+      "priceEUR": null
+    }
+  ]
+}

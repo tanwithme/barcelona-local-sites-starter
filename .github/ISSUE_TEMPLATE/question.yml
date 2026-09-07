@@ -1,0 +1,20 @@
+name: Question / Pregunta / Dubte
+description: Pide ayuda en español, català or English.
+title: "[Pregunta] "
+body:
+  - type: markdown
+    attributes:
+      value: "Cuéntanos qué necesitas. Usa datos ficticios; no publiques credenciales ni información de clientes."
+  - type: textarea
+    id: goal
+    attributes:
+      label: ¿Qué quieres conseguir? / Què vols fer? / What are you trying to do?
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: ¿Dónde te has atascado? / On t’has encallat? / Where are you stuck?
+      description: Incluye solo el error necesario y lo que ya has probado.
+    validations:
+      required: true

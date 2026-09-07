@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "status": "demo",
+  "origin": null,
+  "business": {
+    "name": "Barberia de mostra",
+    "sector": "barber",
+    "neighbourhood": "Sant Antoni",
+    "city": "Barcelona",
+    "address": null,
+    "phone": null,
+    "whatsapp": null,
+    "mapUrl": null,
+    "instagramUrl": null,
+    "hours": [],
+    "priceNote": {
+      "ca": "Preus pendents de confirmar.",
+      "es": "Precios pendientes de confirmar.",
+      "en": "Prices awaiting confirmation."
+    },
+    "visitMode": "premises",
+    "byAppointment": false
+  },
+  "provenance": {
+    "enabled": true
+  },
+  "approvals": {
+    "facts": false,
+    "assets": false,
+    "legal": false,
+    "publication": false,
+    "provenance": false,
+    "locales": {
+      "ca": false,
+      "es": false,
+      "en": false
+    }
+  },
+  "review": {
+    "version": null,
+    "approvedVersion": null,
+    "previewUrl": null,
+    "qaPassed": false,
+    "ownerHandoffReady": false,
+    "evidence": [],
+    "approvedDigest": null
+  },
+  "legal": {
+    "ca": {
+      "notice": null,
+      "privacy": null
+    },
+    "es": {
+      "notice": null,
+      "privacy": null
+    },
+    "en": {
+      "notice": null,
+      "privacy": null
+    }
+  },
+  "assets": [],
+  "copy": {
+    "ca": {
+      "eyebrow": "Sant Antoni, Barcelona",
+      "headline": "Un tall al teu aire.",
+      "intro": "Una pàgina de mostra per aprendre a presentar un negoci del barri amb claredat. No correspon a cap establiment real.",
+      "sectionTitle": "Serveis i temps per a tu",
+      "visitTitle": "Abans de venir",
+      "visitBody": "L’horari, l’adreça i les condicions de reserva s’han de confirmar amb el negoci.",
+      "contactTitle": "Parlem-ne",
+      "contactBody": "Una consulta no confirma cap cita, pressupost ni termini. Espera la resposta del negoci.",
+      "cta": "Consulta disponibilitat",
+      "message": "Hola, voldria consultar disponibilitat.",
+      "items": [
+        {
+          "name": "Tall de cabells",
+          "description": "Servei de mostra: confirma’n l’abast, la durada i el preu.",
+          "id": "item-1"
+        },
+        {
+          "name": "Arranjament de barba",
+          "description": "Servei de mostra: confirma’n l’abast, la durada i el preu.",
+          "id": "item-2"
+        },
+        {
+          "name": "Tall i barba",
+          "description": "Servei de mostra: confirma’n l’abast, la durada i el preu.",
+          "id": "item-3"
+        }
+      ]
+    },
+    "es": {
+      "eyebrow": "Sant Antoni, Barcelona",
+      "headline": "Un corte a tu manera.",
+      "intro": "Una página de muestra para aprender a presentar un negocio del barrio con claridad. No corresponde a ningún establecimiento real.",
+      "sectionTitle": "Servicios y tiempo para ti",
+      "visitTitle": "Antes de venir",
+      "visitBody": "El horario, la dirección y las condiciones de reserva deben confirmarse con el negocio.",
+      "contactTitle": "Hablemos",
+      "contactBody": "Una consulta no confirma una cita, un presupuesto ni un plazo. Espera la respuesta del negocio.",
+      "cta": "Consulta disponibilidad",
+      "message": "Hola, me gustaría consultar disponibilidad.",
+      "items": [
+        {
+          "name": "Corte de pelo",
+          "description": "Servicio de muestra: confirma el alcance, la duración y el precio.",
+          "id": "item-1"
+        },
+        {
+          "name": "Arreglo de barba",
+          "description": "Servicio de muestra: confirma el alcance, la duración y el precio.",
+          "id": "item-2"
+        },
+        {
+          "name": "Corte y barba",
+          "description": "Servicio de muestra: confirma el alcance, la duración y el precio.",
+          "id": "item-3"
+        }
+      ]
+    },
+    "en": {
+      "eyebrow": "Sant Antoni, Barcelona",
+      "headline": "A cut that feels like you.",
+      "intro": "A sample page for learning how to present a local business clearly. This does not represent a real venue.",
+      "sectionTitle": "Services, with time for you",
+      "visitTitle": "Before you visit",
+      "visitBody": "Opening hours, the address and reservation terms need the business owner’s confirmation.",
+      "contactTitle": "Let’s talk",
+      "contactBody": "An enquiry does not confirm an appointment, quote or timescale. Wait for the business to reply.",
+      "cta": "Ask about availability",
+      "message": "Hello, I would like to ask about availability.",
+      "items": [
+        {
+          "name": "Haircut",
+          "description": "Sample service: confirm the scope, duration and price.",
+          "id": "item-1"
+        },
+        {
+          "name": "Beard trim",
+          "description": "Sample service: confirm the scope, duration and price.",
+          "id": "item-2"
+        },
+        {
+          "name": "Hair and beard",
+          "description": "Sample service: confirm the scope, duration and price.",
+          "id": "item-3"
+        }
+      ]
+    }
+  },
+  "catalog": [
+    {
+      "id": "item-1",
+      "priceEUR": null
+    },
+    {
+      "id": "item-2",
+      "priceEUR": null
+    },
+    {
+      "id": "item-3",
+      "priceEUR": null
+    }
+  ]
+}

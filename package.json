@@ -1,0 +1,21 @@
+{
+  "name": "barcelona-local-sites-starter",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "build": "node tools/build.mjs",
+    "build:demo": "node tools/build.mjs --demo",
+    "check:release": "node tools/build.mjs --release-check",
+    "build:release": "node tools/build.mjs --release",
+    "preview": "node tools/preview.mjs",
+    "test": "node --test",
+    "check": "npm test && npm run build",
+    "scan": "node tools/provenance-scan.mjs",
+    "handoff": "node tools/handoff.mjs",
+    "build:library": "node tools/build-library.mjs"
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "status": "demo",
+  "origin": null,
+  "business": {
+    "name": "Cafè de mostra",
+    "sector": "restaurant",
+    "neighbourhood": "Gràcia",
+    "city": "Barcelona",
+    "address": null,
+    "phone": null,
+    "whatsapp": null,
+    "mapUrl": null,
+    "instagramUrl": null,
+    "hours": [],
+    "priceNote": {
+      "ca": "Preus pendents de confirmar.",
+      "es": "Precios pendientes de confirmar.",
+      "en": "Prices awaiting confirmation."
+    },
+    "visitMode": "premises",
+    "byAppointment": false
+  },
+  "provenance": {
+    "enabled": true
+  },
+  "approvals": {
+    "facts": false,
+    "assets": false,
+    "legal": false,
+    "publication": false,
+    "provenance": false,
+    "locales": {
+      "ca": false,
+      "es": false,
+      "en": false
+    }
+  },
+  "review": {
+    "version": null,
+    "approvedVersion": null,
+    "previewUrl": null,
+    "qaPassed": false,
+    "ownerHandoffReady": false,
+    "evidence": [],
+    "approvedDigest": null
+  },
+  "legal": {
+    "ca": {
+      "notice": null,
+      "privacy": null
+    },
+    "es": {
+      "notice": null,
+      "privacy": null
+    },
+    "en": {
+      "notice": null,
+      "privacy": null
+    }
+  },
+  "assets": [],
+  "copy": {
+    "ca": {
+      "eyebrow": "Gràcia, Barcelona",
+      "headline": "Un cafè. Una pausa. El barri.",
+      "intro": "Una pàgina de mostra per aprendre a presentar un negoci del barri amb claredat. No correspon a cap establiment real.",
+      "sectionTitle": "La carta, a mà",
+      "visitTitle": "Abans de venir",
+      "visitBody": "L’horari, l’adreça i les condicions de reserva s’han de confirmar amb el negoci.",
+      "contactTitle": "Parlem-ne",
+      "contactBody": "La reserva només queda confirmada quan el negoci te la confirmi explícitament.",
+      "cta": "Consulta disponibilitat",
+      "message": "Hola, voldria consultar disponibilitat.",
+      "items": [
+        {
+          "name": "Cafès",
+          "description": "Afegeix-hi les opcions reals del negoci.",
+          "id": "item-1"
+        },
+        {
+          "name": "Esmorzars",
+          "description": "Explica què s’hi serveix amb paraules senzilles.",
+          "id": "item-2"
+        },
+        {
+          "name": "Per compartir",
+          "description": "Inclou només plats aprovats pel negoci.",
+          "id": "item-3"
+        }
+      ]
+    },
+    "es": {
+      "eyebrow": "Gràcia, Barcelona",
+      "headline": "Un café. Una pausa. El barrio.",
+      "intro": "Una página de muestra para aprender a presentar un negocio del barrio con claridad. No corresponde a ningún establecimiento real.",
+      "sectionTitle": "La carta, a mano",
+      "visitTitle": "Antes de venir",
+      "visitBody": "El horario, la dirección y las condiciones de reserva deben confirmarse con el negocio.",
+      "contactTitle": "Hablemos",
+      "contactBody": "La reserva solo queda confirmada cuando el negocio te la confirme expresamente.",
+      "cta": "Consulta disponibilidad",
+      "message": "Hola, me gustaría consultar disponibilidad.",
+      "items": [
+        {
+          "name": "Cafés",
+          "description": "Añade las opciones reales del negocio.",
+          "id": "item-1"
+        },
+        {
+          "name": "Desayunos",
+          "description": "Explica qué se sirve con palabras sencillas.",
+          "id": "item-2"
+        },
+        {
+          "name": "Para compartir",
+          "description": "Incluye solo platos aprobados por el negocio.",
+          "id": "item-3"
+        }
+      ]
+    },
+    "en": {
+      "eyebrow": "Gràcia, Barcelona",
+      "headline": "A coffee. A pause. The neighbourhood.",
+      "intro": "A sample page for learning how to present a local business clearly. This does not represent a real venue.",
+      "sectionTitle": "The menu, within reach",
+      "visitTitle": "Before you visit",
+      "visitBody": "Opening hours, the address and reservation terms need the business owner’s confirmation.",
+      "contactTitle": "Let’s talk",
+      "contactBody": "Your reservation is confirmed only when the business explicitly confirms it.",
+      "cta": "Ask about availability",
+      "message": "Hello, I would like to ask about availability.",
+      "items": [
+        {
+          "name": "Coffee",
+          "description": "Add the business’s actual options.",
+          "id": "item-1"
+        },
+        {
+          "name": "Breakfast",
+          "description": "Explain what is served in simple words.",
+          "id": "item-2"
+        },
+        {
+          "name": "To share",
+          "description": "Include only dishes approved by the business.",
+          "id": "item-3"
+        }
+      ]
+    }
+  },
+  "catalog": [
+    {
+      "id": "item-1",
+      "priceEUR": null
+    },
+    {
+      "id": "item-2",
+      "priceEUR": null
+    },
+    {
+      "id": "item-3",
+      "priceEUR": null
+    }
+  ]
+}

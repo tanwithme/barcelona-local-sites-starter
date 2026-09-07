@@ -1,0 +1,371 @@
+:root {
+  --page: #fffaf3;
+  --text: #24241f;
+  --muted: #62564b;
+  --accent: #8b321b;
+  --on-accent: #fff;
+  --surface: #f2e5d2;
+  --border: #95836f;
+  --focus: #0046a8;
+  --display: Georgia, serif;
+  --weight: 400;
+  --radius: 0.25rem;
+  --space: clamp(1.2rem, 5vw, 5rem);
+}
+[data-sector="barber"] {
+  --page: #f5f5f0;
+  --text: #152332;
+  --muted: #4e5c69;
+  --accent: #173d65;
+  --surface: #e1e8eb;
+  --border: #788895;
+  --display: system-ui, sans-serif;
+  --weight: 800;
+  --radius: 0;
+}
+[data-sector="trades"] {
+  --page: #f4f8f4;
+  --text: #163b2d;
+  --muted: #476454;
+  --accent: #1b513b;
+  --surface: #dfebe1;
+  --border: #758d7c;
+  --display: system-ui, sans-serif;
+  --weight: 650;
+  --radius: 0.45rem;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background: var(--page);
+  color: var(--text);
+  font:
+    1.0625rem/1.6 system-ui,
+    -apple-system,
+    sans-serif;
+}
+a {
+  color: var(--accent);
+  text-underline-offset: 0.2em;
+  overflow-wrap: anywhere;
+}
+a:focus-visible,
+summary:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 5px;
+}
+h1,
+h2,
+h3 {
+  line-height: 1.1;
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+}
+h1,
+h2 {
+  font-family: var(--display);
+  font-weight: var(--weight);
+  letter-spacing: -0.035em;
+}
+h1 {
+  font-size: clamp(2.8rem, 6.5vw, 6.5rem);
+  margin: 0;
+}
+h2 {
+  font-size: clamp(2rem, 4vw, 3.7rem);
+  margin: 0.5rem 0 1.5rem;
+}
+h3 {
+  font-size: 1.25rem;
+  margin: 0 0 0.5rem;
+}
+p {
+  max-width: 65ch;
+  margin: 0 0 1rem;
+}
+.demo {
+  padding: 0.65rem var(--space);
+  background: var(--text);
+  color: var(--page);
+  font-size: 0.875rem;
+  font-weight: 650;
+  text-align: center;
+}
+.mast {
+  margin: 0 var(--space);
+  padding: 1.6rem 0;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.brand {
+  font-weight: 750;
+  color: var(--text);
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+nav {
+  display: flex;
+  gap: 0.4rem 1.1rem;
+  flex-wrap: wrap;
+}
+nav a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  font-size: 0.9375rem;
+}
+nav a[aria-current] {
+  color: var(--text);
+  font-weight: 750;
+  text-decoration-thickness: 2px;
+}
+main {
+  margin: 0 var(--space);
+}
+.hero {
+  padding: 4.8rem 0 4rem;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr;
+  gap: 4rem;
+  align-items: end;
+}
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.875rem;
+  font-weight: 650;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+}
+.intro {
+  padding-bottom: 0.3rem;
+}
+.intro > p:first-child {
+  font-size: 1.18rem;
+}
+.button {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  padding: 0.9rem 1.3rem;
+  background: var(--accent);
+  color: var(--on-accent);
+  border: 2px solid var(--accent);
+  border-radius: var(--radius);
+  font-weight: 650;
+  text-decoration: none;
+  line-height: 1.35;
+  text-align: center;
+}
+.button:hover {
+  text-decoration: underline;
+}
+.actions {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 1.4rem 0;
+}
+.small,
+.pending {
+  font-size: 0.9375rem;
+  color: var(--muted);
+}
+.pending {
+  border-left: 3px solid var(--border);
+  padding: 0.5rem 1rem;
+}
+.catalog {
+  border-top: 1px solid var(--border);
+  padding: 3rem 0;
+}
+.service {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem 3rem;
+  padding: 1.3rem 0;
+  border-bottom: 1px solid var(--border);
+}
+.service p {
+  margin-bottom: 0;
+}
+.service .price {
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+.catalog .small {
+  margin-top: 1rem;
+}
+.visit {
+  border-top: 1px solid var(--border);
+  padding: 3rem 0;
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 4rem;
+}
+.visit > div:last-child {
+  padding-top: 2.8rem;
+}
+.hours {
+  margin: 1.4rem 0;
+}
+.hours > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.9375rem;
+}
+.hours dd {
+  margin: 0;
+  text-align: right;
+}
+.contact {
+  margin: 1rem calc(-1 * var(--space)) 0;
+  padding: 3rem var(--space);
+  background: var(--surface);
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+}
+.contact .eyebrow {
+  margin-bottom: 0;
+}
+.contact .actions {
+  flex-direction: column;
+  align-items: flex-start;
+  min-width: 220px;
+}
+footer {
+  margin: 0 var(--space);
+  padding: 2rem 0;
+  font-size: 0.9375rem;
+}
+footer p {
+  margin-bottom: 0.6rem;
+}
+.skip {
+  position: absolute;
+  left: -200vw;
+  top: 1rem;
+  background: var(--page);
+  padding: 1rem;
+  z-index: 5;
+}
+.skip:focus {
+  left: 1rem;
+}
+.legal {
+  max-width: 760px;
+  padding: 4rem 0;
+}
+.legal h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+.legal p {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 1rem;
+  padding: 0 0 3rem;
+}
+.gallery img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+.language-choice {
+  padding: 10vh 0;
+}
+.language-choice h1 {
+  margin-bottom: 3rem;
+}
+.language-choice nav {
+  margin-bottom: 2rem;
+}
+html {
+  scroll-padding-top: 1rem;
+}
+@media (max-width: 760px) {
+  .hero,
+  .visit {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    padding: 2.5rem 0;
+  }
+  .hero {
+    padding-top: 3rem;
+  }
+  .intro > p:first-child {
+    font-size: 1.0625rem;
+  }
+  .visit > div:last-child {
+    padding: 0;
+  }
+  .contact {
+    display: block;
+  }
+  .service {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  .mast {
+    padding: 1rem 0;
+    gap: 0.6rem;
+  }
+  .brand {
+    font-size: 1.06rem;
+  }
+  nav {
+    gap: 1rem;
+  }
+  .catalog {
+    padding: 2.5rem 0;
+  }
+  .contact .actions {
+    min-width: 0;
+  }
+  .button {
+    max-width: 100%;
+  }
+  .hours > div {
+    flex-wrap: wrap;
+  }
+  .hours dd {
+    text-align: left;
+  }
+  .language-choice h1 {
+    font-size: 2.8rem;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    scroll-behavior: auto !important;
+    animation: none !important;
+    transition: none !important;
+  }
+}
+@media (forced-colors: active) {
+  .button {
+    border: 2px solid ButtonText;
+  }
+  :focus-visible {
+    outline: 3px solid Highlight;
+  }
+}
