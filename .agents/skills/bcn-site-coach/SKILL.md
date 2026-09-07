@@ -9,7 +9,7 @@ Use this as the default for open-ended questions in this repository. Answer narr
 
 ## Find the actual job
 
-Read the current brief if one exists. Identify one person, one customer task and an observable result: for example, a customer can find haircut prices and ask for an appointment on a phone. Ask at most two necessary questions. If something nonessential is missing, label the assumption and work on a private draft.
+Read `COPILOT.md` and the current brief if they exist. For an ongoing business/client task, use `bcn-business-copilot` to resume the recorded stage. Identify one person, one customer task and an observable result: for example, a customer can find haircut prices and ask for an appointment on a phone. Ask at most two necessary questions. If something nonessential is missing, label the assumption and work on a private draft.
 
 Choose the current stage from `docs/learning-path.md`. The likely first bottleneck is unclear owner need or missing approved content; check rather than assume. Offer one recommendation with a reason. Avoid a menu of platforms before the customer problem is clear.
 

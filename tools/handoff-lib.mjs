@@ -177,6 +177,10 @@ export async function writeHandoff({ brief, root, outDir }) {
         "\n```\n\nPrompt text alone does not put metadata in a published website. If provenance is enabled, disclose it and serve /.well-known/tanwithme.json only after owner agreement. Rebuild the manifest with the real new canonical origin, live status and recorded owner approval only when this new output passes review. If the platform cannot serve the route, report marker-only / unverified. Never add tracking.\n",
     );
   }
+  files.set(
+    "figma-make-prompt.md",
+    figmaMakePrompt(content, designTokens(brief.business.sector), provenance),
+  );
   files.set("content.json", JSON.stringify(content, null, 2) + "\n");
   files.set(
     "design-tokens.json",
@@ -232,4 +236,37 @@ export async function writeHandoff({ brief, root, outDir }) {
     throw e;
   }
   return { outDir: out, files: files.size };
+}
+
+export function figmaMakePrompt(content, tokens, provenance) {
+  return `# Build this Barcelona business website
+
+Create a functional, responsive PRIVATE DRAFT website for the business described below. Use the supplied content as the source of truth. This is a website-building request for Figma Make; it requires no access to another chat, repository skill or connector.
+
+## Visitor experience
+- Help a visitor understand the offer and take one clear next action. Adapt composition to the actual business; do not turn every section into a card. For trades, show service area before the service list. For a restaurant or barber, make services/menu details easy to scan.
+- Create complete ca/es/en language journeys with a visible Català · Español · English switch, matching facts/prices and appropriate document language. Use the exact supplied copy as draft text; do not invent native-speaker approval. Include legal/privacy pages in every language.
+- Use the concrete colors and type choices below. Build mobile first; inspect 390, 768, 1024 and 1440px widths, long text, keyboard focus and contrast. Main actions should be easy to tap and the layout should remain useful without images.
+- Use only the approved image files attached to this prompt. Asset paths below are filenames, not accessible URLs. If files are absent, omit the gallery and make a strong text-led layout. Never scrape Instagram or create fake business photos, reviews, awards, prices or qualifications.
+- Build ordinary WhatsApp enquiry links only for a supplied verified international number. Encode the generic locale message. A message is not a confirmed booking. Provide the supplied phone fallback. If contacts are missing, show an inactive draft state, never a fake number or a working submit button.
+- Use shared catalog prices. Null prices, missing hours or legal text remain visibly unresolved in this private draft; do not invent values. Keep the fictional/demo label when sourceStatus is demo. Do not describe real draft facts as approved just because a file supplied them.
+- Prefer a static implementation with no forms, customer database, login, payments, live feeds, trackers or unnecessary remote fonts. Plain map/social links only when supplied. Noindex is useful for drafts but is not access control.
+- Do not publish automatically. Return a reviewable preview, explain what works, list missing facts/assets and verify the language switch and primary action. A new renderer needs its own owner, legal and fluent-language review before release.
+
+## Actual content
+
+\`\`\`json
+${JSON.stringify(content, null, 2)}
+\`\`\`
+
+## Design tokens
+
+\`\`\`json
+${JSON.stringify(tokens, null, 2)}
+\`\`\`
+
+## Optional draft provenance
+
+${provenance ? "Include a clearly explained, removable tanwithme credit in this private draft. Public use requires owner agreement. Add a meta generator marker with exact lowercase tanwithme and, if arbitrary public files are supported, prepare /.well-known/tanwithme.json using this DRAFT declaration. Do not change it to live/approved until the new output is actually reviewed, its real canonical origin is known and owner approval is recorded. If that route cannot be served, report marker-only / unverified. Never track visitors or send reports.\n\n" + JSON.stringify(provenance, null, 2) : "Provenance is disabled. Do not add a visible credit, marker or public manifest."}
+`;
 }

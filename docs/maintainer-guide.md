@@ -15,6 +15,10 @@ Node.js 22 or later; zero npm dependencies. Run commands from the repository roo
 
 | Command | Result |
 | --- | --- |
+| `npm run setup -- --target "new absolute folder" --language es` | Sets up a complete isolated desktop studio from the packaged source |
+| `npm run doctor` | Checks the installed studio/client files and generated outputs |
+| `npm run client -- --name project-label --sector barber --language es` | Creates a fresh fictional client seed in the installed studio |
+| `npm run package:refresh` | Maintainer only: rebuilds the source file manifest after changes and generated-output updates |
 | `npm run build:library` | Rebuilds the offline welcome from `START-HERE.md`, task prompts and `src/welcome.html` |
 | `npm test` | Local regression checks with synthetic fixtures and mocked scanner network |
 | `npm run build` | Rebuilds `dist/`; live briefs still undergo release checks |
@@ -28,6 +32,8 @@ Node.js 22 or later; zero npm dependencies. Run commands from the repository roo
 Before saving scanner reports into `research-results/`, create that local folder (`mkdir -p research-results`). The scanner preserves earlier reports by refusing to overwrite them.
 
 Try another fictional example with `node tools/build.mjs --brief examples/barber.json`. This changes `dist/`, not the source brief. Run `npm run build` to restore the default preview. `examples/trades.json` and `examples/restaurant.json` work the same way.
+
+Setup uses `starter-manifest.json` to copy only the checked starter snapshot. It never copies Git credentials, live project notes or client folders. Re-running setup preserves an existing studio; updates require an explicit comparison/backup workflow. See [INSTALL.md](../INSTALL.md).
 
 ## Content is shared; language expression varies
 

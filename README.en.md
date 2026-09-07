@@ -6,13 +6,19 @@
 
 Start without a client, another subscription or coding experience.
 
-## Start without a terminal
+## Start with the link
 
-1. Choose **Code → Download ZIP** and unzip the folder.
-2. Open **START HERE.html**. To use your AI chat, attach [START-HERE.md](START-HERE.md), or paste its contents.
-3. Write: **“Start in English. I have no client yet. Help me practise with a fictional barber shop and give me just the next step.”**
+In **Codex** or **ChatGPT Work on desktop with local-file access**, paste this:
 
-Ask questions whenever you need to. The assistant should explain, admit uncertainty and help you move forward. Uploaded files do not install connectors or unlock provider accounts.
+```text
+Set up https://github.com/tanwithme/barcelona-local-sites-starter on my Desktop. Read INSTALL.md and carry out the setup. I'm a beginner: open the project, load AGENTS.md and its skills, check the demo and be my copilot for offering websites to Barcelona businesses. Help me one step at a time, save our progress and prepare complete Figma Make prompts when needed. Don't publish, buy anything or contact anyone during setup.
+```
+
+The assistant prepares **Barcelona Sites Studio** with instructions, six skills, a demo, Figma Make prompts, progress notes and separate client projects. Then it starts your first practice with you. You do not install each skill individually.
+
+You may need to grant access to a folder or select the installed project in the app. If the chat lacks local access, it should guide you into Work/Codex. If this repository is private, you need GitHub access or a ZIP shared by its owner. [What setup does](INSTALL.md)
+
+**To chat without local setup:** download the ZIP, open `START HERE.html` and attach [START-HERE.md](START-HERE.md). That provides the conversational guide; it does not by itself configure a local folder.
 
 **Sites in Barcelona:** as of 7 September 2026, OpenAI's official guide excludes the EEA from the ChatGPT Sites launch. Begin with the local example or a Figma route your account supports. Check availability before paying. [Official source](https://help.openai.com/en/articles/20001339-creating-and-managing-chatgpt-sites)
 
@@ -24,7 +30,7 @@ Ask questions whenever you need to. The assistant should explain, admit uncertai
 - [Barcelona requirements](docs/barcelona-requirements.md), [business-site research](docs/research-barcelona.md) and [design system](docs/design-system.md).
 - [Sites and Figma](docs/sites-and-figma.md): prepare prompts or execute only through tools actually available.
 
-Includes five original agent skills, three fictional examples and a static generator without external dependencies. Generated sites work without JavaScript and have complete Catalan, Spanish and English journeys. Example copy has AI review; real content needs competent human language review before publication.
+Includes six original agent skills, three fictional examples and a static generator without external dependencies. Generated sites work without JavaScript and have complete Catalan, Spanish and English journeys. Example copy has AI review; real content needs competent human language review before publication.
 
 ## With a coding assistant
 

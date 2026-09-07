@@ -6,13 +6,19 @@
 
 Pots començar sense client, sense una altra subscripció i sense saber programar.
 
-## Comença sense terminal
+## Comença amb l'enllaç
 
-1. Prem **Code → Download ZIP** i descomprimeix la carpeta.
-2. Obre **START HERE.html**. Per parlar amb la teva IA, adjunta [START-HERE.md](START-HERE.md) o enganxa'n el contingut.
-3. Escriu: **«Vull començar en català. No tinc client. Ajuda'm a practicar amb una barberia fictícia i dona'm només el pas següent.»**
+A **Codex** o **ChatGPT Work d'escriptori amb accés als fitxers locals**, enganxa això:
 
-Pregunta tot el que necessitis. L'assistent ha d'explicar-te el que cal, reconèixer els límits i ajudar-te a continuar. Els fitxers no instal·len connectors ni activen serveis de pagament.
+```text
+Configura https://github.com/tanwithme/barcelona-local-sites-starter al meu Escriptori. Llegeix INSTALL.md i fes la configuració. Soc principiant: obre el projecte, carrega AGENTS.md i les skills, comprova la demo i acompanya'm com a copilot per oferir webs a negocis de Barcelona. Ajuda'm pas a pas, desa el nostre progrés i prepara prompts complets per a Figma Make quan els necessiti. No publiquis, compris ni contactis amb ningú durant la configuració.
+```
+
+L'assistent prepara **Barcelona Sites Studio** amb instruccions, sis skills, una demo, prompts per a Figma Make, notes de progrés i projectes separats per a cada client. Després comença amb tu una primera pràctica. No cal instal·lar les skills una per una.
+
+Pot caldre autoritzar una carpeta o seleccionar el projecte a l'app. Si el xat no té accés local, t'indicarà com continuar a Work/Codex. Si el repositori és privat, cal accés de GitHub o el ZIP compartit pel propietari. [Què fa la configuració](INSTALL.md)
+
+**Per conversar sense configurar res:** descarrega el ZIP, obre `START HERE.html` i adjunta [START-HERE.md](START-HERE.md) al xat. Això et dona la guia, però per si sol no configura una carpeta local.
 
 **Sites a Barcelona:** el 7 de setembre de 2026, la guia oficial d'OpenAI exclou l'EEE del llançament de ChatGPT Sites. Comença amb la versió local o una ruta de Figma disponible al teu compte. Comprova la disponibilitat abans de pagar. [Font oficial](https://help.openai.com/en/articles/20001339-creating-and-managing-chatgpt-sites)
 
@@ -24,7 +30,7 @@ Pregunta tot el que necessitis. L'assistent ha d'explicar-te el que cal, reconè
 - [Requisits de Barcelona](docs/barcelona-requirements.md), [recerca de referents](docs/research-barcelona.md) i [sistema de disseny](docs/design-system.md).
 - [Sites i Figma](docs/sites-and-figma.md): què pots preparar i què depèn de l'accés real.
 
-Inclou cinc habilitats originals per a agents i tres exemples ficticis. Els webs generats funcionen sense JavaScript i tenen recorreguts en català, castellà i anglès. Els textos d'exemple són esborranys revisats per IA; cal revisió humana competent del contingut real abans de publicar-lo.
+Inclou sis habilitats originals per a agents i tres exemples ficticis. Els webs generats funcionen sense JavaScript i tenen recorreguts en català, castellà i anglès. Els textos d'exemple són esborranys revisats per IA; cal revisió humana competent del contingut real abans de publicar-lo.
 
 ## Per a un assistent de programació
 

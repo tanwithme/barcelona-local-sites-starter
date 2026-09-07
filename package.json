@@ -1,6 +1,6 @@
 {
   "name": "barcelona-local-sites-starter",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
   "type": "module",
   "engines": {
@@ -16,6 +16,10 @@
     "check": "npm test && npm run build",
     "scan": "node tools/provenance-scan.mjs",
     "handoff": "node tools/handoff.mjs",
-    "build:library": "node tools/build-library.mjs"
+    "build:library": "node tools/build-library.mjs",
+    "setup": "node tools/setup.mjs",
+    "doctor": "node tools/doctor.mjs",
+    "client": "node tools/client.mjs",
+    "package:refresh": "node tools/package-files.mjs"
   }
 }

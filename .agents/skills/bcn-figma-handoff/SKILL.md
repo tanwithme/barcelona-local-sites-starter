@@ -7,6 +7,12 @@ description: Write actionable Figma prompts and optionally create or inspect Bar
 
 This skill defines the project brief and handoff. Official Figma connectors and their mandatory skills are separate dependencies; this repository does not bundle or install them.
 
+## Default: a prompt for Figma Make
+
+When the learner asks to create a site with Figma Make, produce one self-contained prompt addressed directly to Make: build this website, using these facts, copy, visual tokens, responsive behavior and acceptance checks. Do not put instructions to install connectors or read missing repository skills in that prompt. `npm run handoff` produces `exports/figma-make-prompt.md` for supported briefs. For any other site type, adapt the task/sections from the actual requirements and write the prompt directly; the local renderer still supports only its declared sectors.
+
+Include the copy and design token values inside the prompt, and supply permitted images separately. The prompt must work without its recipient reading another document. A Figma connector is optional and is not part of this default path.
+
 ## Choose the available mode
 
 - **Prompt mode:** always possible. Deliver a self-contained prompt for the user's chosen Figma AI surface, plus assets and acceptance criteria. Capabilities vary; avoid promising automatic design, code generation or publishing.

@@ -8,14 +8,11 @@ OpenAI's current Sites FAQ excludes the EEA at launch. Barcelona beginners shoul
 
 The same guide distinguishes new private previews from public release and explains that custom domains depend on availability. Existing domain ownership does not make migration automatic. Preserve email DNS and confirm owner access before changing records.
 
-## Zero-install conversation path
+## One-link desktop setup
 
-1. Download the GitHub ZIP and unzip it.
-2. Upload `START-HERE.md` to your AI chat and write in Catalan, Spanish or English. If the chat cannot read the attachment, paste it.
-3. Say which account/tool you are using and what you want to help the owner do. The coach should begin with one small question or action.
-4. Add owner-approved facts, the brief and authorised original photos only when needed. Do not upload customer conversations, credentials or private identity paperwork.
+Paste the repository URL and [setup instruction](../SETUP-PROMPT.md) into Codex or an eligible ChatGPT Work desktop session with local-folder access. The assistant follows [INSTALL.md](../INSTALL.md), creates the studio, reads the installed agent/skill files and starts a practice. Folder permissions and actual app capabilities still apply; a private repository requires access or an owner-shared ZIP. [Official desktop access guide](https://help.openai.com/en/articles/20001275-chatgpt-work-and-codex)
 
-An uploaded file provides context. It does not automatically install agent skills, create a repository, give Figma access or enable Sites. The assistant must report its real capabilities.
+For a chat-only route, upload `START-HERE.md` or paste it. That gives conversational coaching but does not claim local installation. Add permitted facts/assets only as needed.
 
 ## ChatGPT Sites, when available
 
@@ -29,7 +26,11 @@ The generated website has no database, login, customer form or server dependency
 
 **Fallback:** if the tool cannot preserve the static routes, public manifest, privacy requirements or owner control, keep the draft and use another agreed host. Prompt text cannot guarantee a route exists in the final website.
 
-## Figma Design: editable design first
+## Figma Make: the default is a paste-ready prompt
+
+Ask the copilot to prepare the website for Make. `npm run handoff` creates `exports/figma-make-prompt.md`, with the actual copy, all three locales, concrete visual tokens, behavior, draft provenance and acceptance checks embedded. Paste that file's text into Make and attach approved images from `exports/assets/` if present. No Figma connector is needed to write this prompt. The copilot can write the same style of complete prompt for other site types; it must not imply that the static generator already supports those types.
+
+## Figma Design: optional editable design route
 
 Use `prompts/06-figma.md`, selecting Design. With a capable installed connector, ask the agent to inspect/create the authorised Figma file using its official Figma skills, then create editable auto-layout frames, semantic variables and reusable components. Require returned file/node links and actual screenshots. Do not accept a textual claim that a file was created.
 
@@ -45,6 +46,6 @@ Publishing settings support metadata and custom head/body code, with account-dep
 
 ## A handoff that survives changing tools
 
-Carry the brief, current design direction, files/assets, current test state and remaining owner decisions. `npm run handoff` produces two prompts, `content.json`, concrete design tokens and copies of approved image files. A handoff creates a new draft that needs its own rendered review. It excludes private approval evidence from the content payload. Source assets still need an actual file attachment or authorised accessible location.
+Carry the brief, current design direction, files/assets, current test state and remaining owner decisions. `npm run handoff` produces a direct Make build prompt plus two assistant handoff prompts, `content.json`, concrete design tokens and copies of approved image files. A handoff creates a new draft that needs its own rendered review. It excludes private approval evidence from the content payload. Source assets still need an actual file attachment or authorised accessible location.
 
 No connector is an excuse to fabricate a completed action. Missing access changes the route; it should not end the learner's ability to practise.

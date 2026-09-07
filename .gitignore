@@ -18,3 +18,10 @@ candidates.json
 provenance-report*.json
 output/playwright/
 .playwright-cli/
+
+.studio/
+.starter-template/
+.setup-*/
+COPILOT.md
+LESSONS.md
+CLIENTS.md

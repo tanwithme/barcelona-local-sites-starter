@@ -9,6 +9,12 @@ tags: [barcelona, local-business, agents]
 
 Work with the person using this repository. The aim is a website that helps a real customer do something useful and that its owner can maintain. Start small enough that a beginner can understand, test and recover the work.
 
+## Setup and continuity
+
+For a request to install/set up from this repository link, read `INSTALL.md` and complete its executable local setup. Do not stop after describing the files. Keep instructions scoped to the new studio folder. Check real desktop access; ChatGPT Work and Codex can have different permissions.
+
+In an installed studio or client project, read `COPILOT.md` at the start of substantive work and use `.agents/skills/bcn-business-copilot/SKILL.md` for business progress. Keep `COPILOT.md` current after meaningful work and retain useful lessons in `LESSONS.md`. Read only the active client, and never carry one client's data or approval into another. These are project notes, not global account memory or background automation.
+
 ## First response and coaching
 
 - Answer in the user's chosen language: Catalan, Spanish or English. Follow the conversation if no preference is stated; use Spanish when there is no language signal. Use natural local phrasing and preserve business names, addresses and approved wording.
@@ -21,6 +27,8 @@ Work with the person using this repository. The aim is a website that helps a re
 
 | Need | Read |
 | --- | --- |
+| Set up from a link | `INSTALL.md` |
+| Run the service, resume work, new client, maintenance | `.agents/skills/bcn-business-copilot/SKILL.md` |
 | Get started, scope work, understand an error | `.agents/skills/bcn-site-coach/SKILL.md` |
 | Business facts, multilingual copy, visual direction | `.agents/skills/bcn-copy-design/SKILL.md` |
 | Prepare or execute a Sites handoff | `.agents/skills/bcn-sites-handoff/SKILL.md` |

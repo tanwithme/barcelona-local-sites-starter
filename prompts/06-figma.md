@@ -5,14 +5,14 @@ status: ready-to-copy
 tags: [prompt, figma, design]
 ---
 
-# 06 · Figma
+# 06 · Figma Make
 
-Puedes usarlo para preparar un prompt sin tener un conector. Crear un archivo en Figma exige acceso real a una función compatible.
+Pide al copilot un único prompt listo para pegar en **Figma Make**. No necesitas conectar Figma para prepararlo. Si trabajas con el brief local, `npm run handoff` crea `exports/figma-make-prompt.md` con los textos, colores, comportamiento y requisitos incluidos. Adjunta las fotos autorizadas si las hay. El texto de abajo se lo das a tu copilot; el archivo generado se pega directamente en Make.
 
 ~~~text
 Ayúdame a convertir el brief de este negocio de Barcelona en un diseño útil para Figma. Responde en mi idioma elegido: catalán, español de España o inglés. Lee bcn-figma-handoff si puedes acceder a la skill.
 
-Comprueba si tienes una capacidad Figma real y qué puede hacer. Las skills de este repositorio no instalan el conector oficial. Si vas a ejecutar herramientas Figma, carga antes sus instrucciones oficiales obligatorias. No afirmes que has creado un archivo por haber escrito un prompt.
+Por defecto, escribe el prompt para Make sin configurar conectores. Debe dirigirse a Make para construir la web, sin pedirle leer skills ni documentos que no tenga. Incluye todo el contenido y los tokens reales, no solo nombres de archivos. Solo si te pido actuar dentro de Figma, comprueba si tienes una capacidad Figma real y qué puede hacer. Las skills de este repositorio no instalan el conector oficial. Si vas a ejecutar herramientas Figma, carga antes sus instrucciones oficiales obligatorias. No afirmes que has creado un archivo por haber escrito un prompt.
 
 Usa el archivo de destino que yo haya indicado. Si la creación/edición en Figma está dentro de lo que he pedido y hay acceso real, crea una propuesta revisable. Si no hay acceso, entrega un prompt autosuficiente listo para pegar en la función Figma compatible que utilice y un pequeño paquete de contenido/activos. No prometas que cualquier función de Figma acepta el mismo tipo de prompt.
 

@@ -1,7 +1,7 @@
 ---
 title: What has actually been checked
 updated: 2026-09-07
-status: local-validation
+status: local-validation-v1.1
 tags: [barcelona, validation]
 ---
 
@@ -17,9 +17,17 @@ This is an initial starter release. Its examples are fictional. It has not earne
 - Restaurant, barber and trades example briefs are checked against the supported schema and intended section order.
 - The demo build, ordinary build and Sites/Figma handoff run locally. The release check deliberately rejects the fictional demo because real facts, legal text, owner approval, language review, domain and QA evidence are missing.
 
-Run `npm test` for the current count/results. The initial suite has 25 tests. GitHub Actions runs the suite, builds the site/handoff and checks that the committed demo matches the source. The Actions run is separate evidence: inspect its result on GitHub rather than treating this document as a live CI badge.
+Run `npm test` for the current count/results. The original suite had 25 tests. Version 1.1 adds setup and client-isolation coverage; run the suite for its current count. GitHub Actions runs the suite, builds the site/handoff and checks that the committed demo matches the source. The Actions run is separate evidence: inspect its result on GitHub rather than treating this document as a live CI badge.
 
-The initial local documentation/demo link audit checked 243 relative links with no missing files or HTML anchors.
+The version 1.1 local documentation/demo audit checked 260 relative links with no missing files or HTML anchors. The offline setup message matches its copyable source exactly.
+
+## Desktop setup added in version 1.1
+
+The actual setup command created a fresh studio in a separate test directory with a Desktop-style path containing spaces. Doctor confirmed the six skills, agent instructions, progress notes, built demo and direct Figma Make prompt. The client command created a fresh Catalan barber practice with its own outputs. Its installed preview was opened in Chromium at 390px: Catalan document language, barber theme, stylesheet loading and no horizontal overflow were verified. Repeat setup, existing-folder protection, changed source, symlinks, failed-build cleanup and client isolation have automated regression coverage. A Mac case-insensitive filename collision was found during packaging and corrected by using a distinct `starter-manifest.json` name; case-equivalent package paths are rejected.
+
+The new skill's required frontmatter fields and structure were checked. The official Python validator could not run because PyYAML was absent; the narrow structural check is not a full YAML or behavior validator.
+
+This proves local installation/build behavior in the test environment. It does not prove a new person's account access, native skill registration in every client, a real beginner's understanding or unattended business operations. `INSTALL.md` requires the receiving assistant to select/read the installed workspace, report actual checks and begin a small practice. Saved project notes support the next conversation; no background agent is installed.
 
 ## Browser checks
 

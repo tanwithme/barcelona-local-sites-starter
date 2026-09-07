@@ -4,6 +4,7 @@ import { fileURLToPath } from "node:url";
 import { escapeHtml } from "../src/site.mjs";
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const start = await readFile(path.join(root, "START-HERE.md"), "utf8");
+const setup = await readFile(path.join(root, "SETUP-PROMPT.md"), "utf8");
 const template = await readFile(path.join(root, "src/welcome.html"), "utf8");
 const names = (await readdir(path.join(root, "prompts")))
   .filter((n) => n.endsWith(".md"))
@@ -33,6 +34,7 @@ await writeFile(
   out,
   template
     .replace("__START__", () => escapeHtml(start))
+    .replace("__SETUP__", () => escapeHtml(setup))
     .replace("__CARDS__", () => cards.join("\n")),
 );
 console.log(`Built offline welcome and ${cards.length} task prompts.`);
