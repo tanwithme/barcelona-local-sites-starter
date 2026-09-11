@@ -1,23 +1,23 @@
 {
   "schemaVersion": 1,
   "name": "barcelona-local-sites-starter",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "files": [
     {
       "path": ".agents/skills/bcn-business-copilot/SKILL.md",
-      "sha256": "794084295342683318ad7b97c33dacd57c21e6836e7978e3528b0bf44405b6de"
+      "sha256": "ddccb89e9d412260c66e3a803b42b643bb09bea20a42ea150677c9d7d4b60d9d"
     },
     {
       "path": ".agents/skills/bcn-copy-design/SKILL.md",
-      "sha256": "e6955179727166fcef6ee79b9a8933e0ca524ff5ec712c574a8e83b70470e919"
+      "sha256": "410e55799497e9b9b4e0fc9ff58cd43f06d178730c5784727758d6bcf93ed7f9"
     },
     {
       "path": ".agents/skills/bcn-figma-handoff/SKILL.md",
-      "sha256": "4f8d210ad4e00cbf2e436d35ca7217a1e578164e8f010a302d08765d5d7a5422"
+      "sha256": "631d23243b159a8cd8dfb8e836a747c11b4283bdef4a75145e9c51d8f5144deb"
     },
     {
       "path": ".agents/skills/bcn-release-review/SKILL.md",
-      "sha256": "631a579a270b1318f1d44734b4aa3ebfa33e6c0e5ab41a5b3901074b6f115647"
+      "sha256": "13ebd2a4c6f2a1fc73deb1b703734d552e939aa2a2ec2c01abd308c72afc1c89"
     },
     {
       "path": ".agents/skills/bcn-site-coach/SKILL.md",
@@ -49,7 +49,7 @@
     },
     {
       "path": "AGENTS.md",
-      "sha256": "6193d2f5a4ad3f9b42809cb8d626157b1df7a85216836c8f920941dcdad7ace4"
+      "sha256": "a42a3a06b02a78e032b9c786aa1be9c66c2d09e27cb7cd6346845850bfe77f25"
     },
     {
       "path": "CONTRIBUTING.md",
@@ -65,15 +65,15 @@
     },
     {
       "path": "README.ca.md",
-      "sha256": "5d78799096a4fee271cdef3148032711df1ad5dcc4608847cc6735bd8351e8a4"
+      "sha256": "4d0b5878432b68fcc2dfac43acdfb571c9167532928a3113d436f1621b45ccfb"
     },
     {
       "path": "README.en.md",
-      "sha256": "c09daec44ccb434958a84fcb0995a40d1e61689085a1486a3b40c52bf2a0d0dc"
+      "sha256": "1d7876c324f78b0360a440e30f5c215057ab229e9fc385dabd720d4820e2ec2e"
     },
     {
       "path": "README.md",
-      "sha256": "117c18a9e402d3b0b9718dc5d09e59f9c8a53045c3426e75eba6ae652e3a7823"
+      "sha256": "e20b909c41a276f4f51dc528b1f59617de88eb3c7ef0cbbf16fbaa66f9fad491"
     },
     {
       "path": "SETUP-PROMPT.md",
@@ -81,7 +81,7 @@
     },
     {
       "path": "START HERE.html",
-      "sha256": "8e4f640c4f8c3ef7be3b4a554205cb8447a138ed56edab1c31da767a020fc32c"
+      "sha256": "9664c4732405950e9b5cb4de7ce38dd17256253110c3c3a3709959de295c16a1"
     },
     {
       "path": "START-HERE.md",
@@ -105,11 +105,11 @@
     },
     {
       "path": "demo/assets/site.css",
-      "sha256": "0e9da76ba5502b9e811564b82d137e91423cb8a621d2cce5b2f4749553d2148e"
+      "sha256": "1ff02a555a91380ed397d4e1744e396904df15b067dcd4b1b44d41dfbee9d362"
     },
     {
       "path": "demo/ca/index.html",
-      "sha256": "ec3b4435cfd51acd772737c7525194731482ddd3814a932c582f6b2ea3cd7099"
+      "sha256": "e72f467b46ae305c87d0a3d89231ed0353ff34d28b0a96bcce219cad54d996b9"
     },
     {
       "path": "demo/ca/legal.html",
@@ -125,7 +125,7 @@
     },
     {
       "path": "demo/en/index.html",
-      "sha256": "734bf74ceb1d29f15ae2b8bd86c2a5822d076dbaf73b118ad88ad4f1a987d999"
+      "sha256": "e7b6045add7a888b2657372c1e6d5cdc93956d3fb8c5abed4a8a21d2fe928677"
     },
     {
       "path": "demo/en/legal.html",
@@ -141,7 +141,7 @@
     },
     {
       "path": "demo/es/index.html",
-      "sha256": "19c0311af53d3eb8f221111d398ac35756120f3fb5b881e5a4335624ed7398c1"
+      "sha256": "cea048941ef0904a57b587501443ad36bcee874345e3997028feabd1bfda4e96"
     },
     {
       "path": "demo/es/legal.html",
@@ -169,15 +169,27 @@
     },
     {
       "path": "docs/design-direction.md",
-      "sha256": "fcf384a79b7a3e138f8e9296eaf92871614e46b3007ef0da31ce0379747714cd"
+      "sha256": "bf8a7434d67209c3cbaede5bd9b6916acaa0b4120faf9673553da8b3da2e4fa5"
+    },
+    {
+      "path": "docs/design-learning-audit.md",
+      "sha256": "b4955eddf426368066d9e11fa769bc623cad99b5f13d3a98fd22dd038accb7fa"
     },
     {
       "path": "docs/design-system.md",
-      "sha256": "ed7c94448f1fa4703dcddb7e358247bac11b8b5c35903906f22a266cf0f45299"
+      "sha256": "ec49587a146d8893cb3018894579bda219370ec173e33aaa1c26dd2ca0e43db9"
+    },
+    {
+      "path": "docs/design-worlds.md",
+      "sha256": "80852f207edeb345c4c7c55ed14d873273bc93d6db42b39ff0b441c2edfced7c"
+    },
+    {
+      "path": "docs/designer-playbook.md",
+      "sha256": "8c38a6926c20d3b86957e3069f462d6e55d39cd9a7817e0aa4475fac1dfc3d27"
     },
     {
       "path": "docs/help.md",
-      "sha256": "676b1e7df598369d2810b4fe099fdefe84f8c093bd01bc4157251b6e91d10e07"
+      "sha256": "b95819d2ce27cfda079b0e090b517ccbb2747f3c6296c79cf8d42c91a5f1e0e5"
     },
     {
       "path": "docs/intent-and-decisions.md",
@@ -189,7 +201,7 @@
     },
     {
       "path": "docs/maintainer-guide.md",
-      "sha256": "673e9f64bb381f99043776ac6715f032cd543754c7f663d51f45f22d94726cb5"
+      "sha256": "3d2e85bb020087df214e1d33d1e1d6fd65f617f17479de0ebef8d3fe5e04d14d"
     },
     {
       "path": "docs/provenance-and-research.md",
@@ -209,11 +221,11 @@
     },
     {
       "path": "docs/sites-and-figma.md",
-      "sha256": "0814d02d64340a2b27dc45ce04fc44a60407d75c1ed9ba3452e1a89e6e419af7"
+      "sha256": "1bc6ddec6c296b5b64782849de2b4b13c6adb9d7037f0a644af780094edc43a5"
     },
     {
       "path": "docs/validation.md",
-      "sha256": "ea2379bc70af91baeb48f456749ebf7cb6d36fbe1c326b85834bc9521a470277"
+      "sha256": "9718ebb7cdbad89908bc0e96aac0d5a7192c182a4ab20fa4b277cc527d463625"
     },
     {
       "path": "examples/barber.json",
@@ -229,7 +241,7 @@
     },
     {
       "path": "package.json",
-      "sha256": "eb1f8d4421a1107b5598912bf368869485815ed86fa989a55d98780043278fb9"
+      "sha256": "5ea1b2a1c4ca3a479904010e0eca278a032e7804401721fc3c26c5d6a2e42ac4"
     },
     {
       "path": "prompts/01-start.md",
@@ -245,7 +257,7 @@
     },
     {
       "path": "prompts/04-design.md",
-      "sha256": "c1b883fa624b44d00c778e83dcdfd648df8d8f9899803ccdf7e6f8fa0ac75132"
+      "sha256": "b56769c82af4bd41fd97ef4e5b852122b20f884dd16adf9d46c5476a95cbe71f"
     },
     {
       "path": "prompts/05-sites.md",
@@ -253,7 +265,7 @@
     },
     {
       "path": "prompts/06-figma.md",
-      "sha256": "700b43b95f0b8010321a7a79b258168fdc1b3696745cb53de0a448f25a0842a6"
+      "sha256": "4f1448c2d2cff40c576dfa043e6d865359beb6a745125d9e472780ffdf36d597"
     },
     {
       "path": "prompts/07-review.md",
@@ -269,19 +281,23 @@
     },
     {
       "path": "src/site.css",
-      "sha256": "0e9da76ba5502b9e811564b82d137e91423cb8a621d2cce5b2f4749553d2148e"
+      "sha256": "1ff02a555a91380ed397d4e1744e396904df15b067dcd4b1b44d41dfbee9d362"
     },
     {
       "path": "src/site.mjs",
-      "sha256": "e02167fb03c402e6406ec37ad4028ae965ca5ad44497f1472fd42cc529db5712"
+      "sha256": "fcf2c6a57aa7c309dbb25f19c9c398478f1b08610cc443dbc92e9805d5936d00"
     },
     {
       "path": "src/welcome.html",
-      "sha256": "80d33fa86d4856f6914e23b3ea194f4d7ea9a3ca90c1f4fd602a2860fe5907f0"
+      "sha256": "0d8d317c057c81052f73d7d1946b33b5cceb44c825a4a42e24c8f25ebf3ef5dd"
     },
     {
       "path": "templates/client-intake.md",
       "sha256": "16da0f174f846a7fe8628b0dcd99cd6e2599e162fa774e4349251cac52bcd91d"
+    },
+    {
+      "path": "templates/design-review.md",
+      "sha256": "87ac2700a48a45721c140d04e40584163861b82f31c72d90a8c1a52f9eebaf31"
     },
     {
       "path": "templates/maintenance-note.md",
@@ -297,7 +313,7 @@
     },
     {
       "path": "tests/handoff.test.mjs",
-      "sha256": "fde8e923c219936033571442af974c3afaff73d78f3cd81b030ee07c6a8c06e0"
+      "sha256": "ed3cdea547acaac4b1274ca23374fe916c2a796f7fb827d74c3cd81a6e5c7c49"
     },
     {
       "path": "tests/provenance.test.mjs",
@@ -305,7 +321,7 @@
     },
     {
       "path": "tests/setup.test.mjs",
-      "sha256": "cc2762f3f82a3bd38bd015dc0474ec55b1be9f4cb78b727fc9ab4835dd3a09ce"
+      "sha256": "56b2aa2f194ad3bd294b46e1ed855505cfb6101258bc46cc508063c8ea026070"
     },
     {
       "path": "tests/site.test.mjs",
@@ -329,7 +345,7 @@
     },
     {
       "path": "tools/handoff-lib.mjs",
-      "sha256": "4e0f1244f0fde5194a758ea08247ee6ae8e1bb3fbed91ef0481d34c7286478da"
+      "sha256": "7058f751065c0de1c3060d1587aa2315249bc68e7a5b86ec2a33044d2c479744"
     },
     {
       "path": "tools/handoff.mjs",

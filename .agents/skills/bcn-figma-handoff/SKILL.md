@@ -41,3 +41,7 @@ For a static contact site, design only the contact action the owner can fulfil. 
 If the tool executes, verify the file/frame links and inspect screenshots at phone/desktop sizes. Check actual layers/components only when the connector exposes them. Correct observed overflow, mismatched locale facts and misleading CTAs. Preserve content-first reading order.
 
 A Figma design or prototype is not a deployed website. Report precisely what exists, what was inspected and how the user reaches the next build step. If only a prompt was produced, call it a prompt and provide the local starter/Sites handoff without claiming a Figma file exists.
+
+## Carry judgment across the tool boundary
+
+Read `docs/designer-playbook.md`; generated handoffs already embed it. Include the protected idea, intended visitor experience, section jobs, shape/image grammar and a creative review alongside functional checks. Do not lock the design to the fallback sector palette if the business calls for another. Preserve approved copy and facts; propose substantive wording changes for review. A recipient must not need access to this repository or the source conversation to apply the method.

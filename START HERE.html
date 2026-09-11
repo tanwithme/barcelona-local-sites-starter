@@ -150,13 +150,17 @@ Parte de los hechos aprobados y de una sola tarea principal del cliente. Si falt
 
 Propón una dirección visual concreta que nazca del negocio y su barrio, sin recurrir a tópicos de Barcelona ni a una plantilla intercambiable. Reutiliza reglas de calidad, pero elige la composición y el tono para este negocio. Explica la idea en una frase.
 
+Antes de diseñar, protege lo que ya funciona: una frase, una relación humana, una imagen o una interacción. Define qué debe sentir y poder hacer el visitante. Lee docs/designer-playbook.md si está disponible. Considera brevemente tres maneras distintas de producir esa experiencia y elige una viable; no me obligues a escoger entre tres webs completas.
+
+Busca coherencia, no uniformidad: una familia de formas, roles de color y tipografía; distintas escalas y ritmos según el trabajo de cada sección. Quita lo gratuito sin borrar el carácter. No conviertas una corrección estética en una prohibición de los enlaces subrayados o del punt volat catalán. Con pocas fotos, puedes proponer ilustraciones originales coherentes, siempre como ilustración y nunca como prueba falsa del negocio. No copies personajes o identidad de una referencia.
+
 Entrega:
 1. Orden de secciones en móvil y cómo cambia en escritorio.
 2. Un sistema pequeño de color, tipografía, espaciado y componentes; especifica foco visible, contraste legible y comportamiento de etiquetas largas.
 3. Textos alineados en catalán, español de España e inglés: titular, explicación breve, oferta, botones, contacto y mensajes relevantes. Mantén los mismos hechos; redacta de forma natural en cada idioma.
 4. Un selector visible “Català · Español · English” que conserve la página o tarea al cambiar de idioma.
 5. Plan de imágenes reales: archivo, uso, recorte, texto alternativo y permiso. Si faltan fotos, usa una composición tipográfica o un marcador de borrador; no simules fotos reales del negocio.
-6. Una prueba en móvil para que otra persona entienda la oferta y alcance la acción sin explicación.
+6. Una revisión del ritmo completo y de si conservamos la personalidad, separada de las comprobaciones técnicas. Una prueba en móvil para que otra persona entienda la oferta y alcance la acción sin explicación.
 
 Si el botón abre WhatsApp, deja claro que es una solicitud: “Demana cita”, “Pide cita” o “Ask for an appointment”. No finjas una reserva confirmada. Incluye una vía alternativa apropiada. Evita formularios y recursos de terceros si no aportan una utilidad concreta.
 
@@ -218,7 +222,8 @@ Trabaja con hechos confirmados, una tarea principal del cliente y fotos con perm
 
 El diseño o prompt debe especificar:
 - Negocio, barrio/zona, público y acción principal.
-- Una idea visual concreta, orden de secciones y contenido real.
+- La experiencia que queremos provocar, la idea que debemos proteger, una gramática de formas/color/imagen y un ritmo distinto según la función de cada sección. Incluye el método de docs/designer-playbook.md dentro del prompt si está disponible; Make no debe necesitar leer ese archivo.
+- Una idea visual concreta, orden de secciones y contenido real. Los colores del sector son ejemplos, no identidad obligatoria.
 - Tokens de color, tipografía y espaciado; componentes reutilizables y estados pertinentes.
 - Frames móviles y de escritorio, auto-layout y restricciones adaptables cuando la herramienta lo permita.
 - Versiones de texto en catalán, español de España e inglés; selector Català · Español · English; comportamiento con textos largos.
@@ -292,6 +297,6 @@ No desactives revisiones de publicación, inventes aprobaciones ni cambies datos
 
 Entrega: causa confirmada o hipótesis, cambio realizado, prueba realmente ejecutada, resultado y cualquier límite pendiente. Ofrece una práctica breve y opcional para aprender de este caso: qué esperaba → qué pasó → qué cambió → qué observaré la próxima vez.
 ~~~
-</textarea><button type="button" class="copy">Copiar prompt</button><span class="status" aria-live="polite"></span></details></section><section><h2>Pequeño, útil y recuperable</h2><ul><li>Tres idiomas comparten los mismos datos, precios y promesas. Una persona revisa el contenido real antes de publicarlo.</li><li>WhatsApp abre una consulta. El negocio confirma la reserva.</li><li>Las fotos necesitan permiso. Si faltan, la web sigue siendo útil.</li><li>La marca opcional <strong>tanwithme</strong> declara la procedencia del pack. No rastrea a los visitantes.</li><li>Prueba un cambio, observa qué pasa y conserva la versión que funcionaba.</li></ul><p><a href="docs/provenance-and-research.md">Cómo funciona la marca y la investigación</a> · <a href="docs/validation.md">Qué se ha comprobado</a></p></section></main><footer><p>Hecho para aprender construyendo en Barcelona.</p><p class="small">Las demos son ficticias. El pack no promete ingresos ni publica nada por su cuenta. Los archivos funcionan en tu ordenador; Google Drive puede mostrarlos como descarga en vez de ejecutar esta página.</p></footer><script>
+</textarea><button type="button" class="copy">Copiar prompt</button><span class="status" aria-live="polite"></span></details></section><section><h2>Pequeño, útil y recuperable</h2><ul><li>Tres idiomas comparten los mismos datos, precios y promesas. Una persona revisa el contenido real antes de publicarlo.</li><li>WhatsApp abre una consulta. El negocio confirma la reserva.</li><li>Las fotos necesitan permiso. Si faltan, la web sigue siendo útil.</li><li>La marca opcional <strong>tanwithme</strong> declara la procedencia del pack. No rastrea a los visitantes.</li><li>Prueba un cambio, observa qué pasa y conserva la versión que funcionaba.</li></ul><p><a href="docs/provenance-and-research.md">Cómo funciona la marca y la investigación</a> · <a href="docs/validation.md">Qué se ha comprobado</a></p></section><section><h2>Diseñar con carácter</h2><p>Pídele al copilot que proteja la idea del negocio, elija una dirección coherente y te enseñe una decisión cada vez. Los tres ejemplos son puntos de partida, no estilos obligatorios.</p><p><a href="docs/designer-playbook.md">Método de diseño</a> · <a href="docs/design-worlds.md">Tres direcciones</a> · <a href="templates/design-review.md">Revisar una web</a></p></section></main><footer><p>Hecho para aprender construyendo en Barcelona.</p><p class="small">Las demos son ficticias. El pack no promete ingresos ni publica nada por su cuenta. Los archivos funcionan en tu ordenador; Google Drive puede mostrarlos como descarga en vez de ejecutar esta página.</p></footer><script>
 for(const button of document.querySelectorAll('.copy'))button.addEventListener('click',async()=>{const text=button.parentElement.querySelector('textarea');const status=button.parentElement.querySelector('.status');try{if(!navigator.clipboard)throw new Error('manual');await navigator.clipboard.writeText(text.value);status.textContent='Copiado / Copiat / Copied';}catch{text.focus();text.select();status.textContent='Texto seleccionado: ⌘C / Ctrl+C para copiar.';}});
 </script></body></html>

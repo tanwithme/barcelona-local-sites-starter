@@ -56,6 +56,11 @@ test("fresh desktop-style setup produces a usable studio with all six skills and
     assert.match(make, /#8b321b/);
     assert.match(make, /Català/);
     assert.match(make, /PRIVATE DRAFT/);
+    const designMethod = await readFile(
+      path.join(target, "docs/designer-playbook.md"),
+      "utf8",
+    );
+    assert.ok(make.includes(designMethod));
     assert.ok((await readFile(path.join(target, "dist/index.html"))).length);
     assert.match(doctor.assistantDiscovery, /does not prove loading/);
   } finally {

@@ -13,7 +13,13 @@ Separate owner-confirmed facts, source claims, design assumptions and missing fa
 
 Choose only useful sections: identity/offer, services or menu, relevant prices, real proof, location/service area, opening hours and contact. A restaurant may need a readable menu and reservation expectations; a barber may need duration and pricing; a repairer may need coverage and an enquiry route. Flag regulated or sensitive claims for the appropriate owner/professional review.
 
-## Build one visual direction
+## Protect the idea, then build one visual direction
+
+Read `docs/designer-playbook.md` for substantive design work. Use `docs/design-worlds.md` only if an example will help. Preserve the strongest line, real asset or emotional relationship through revision; a tidy result can still lose the business's soul. Consider a few different ways to create the experience internally, choose one feasible direction, and build it. Explain one choice at a time to a beginner.
+
+Keep type, color roles, shapes and image treatment coherent while varying section rhythm. Organic forms and illustration are options, not requirements. Generated illustration can replace absent decorative material but never evidence of real business activity. Avoid copying a reference brand's identity. Do not universally ban stars, underlines or punctuation based on one rejected ornament.
+
+
 
 Explain the concept in one sentence based on the business, not generic adjectives. Reuse accessible type/spacing/color rules while changing composition, imagery and content hierarchy as appropriate. Produce tokens, a mobile section order, desktop behavior and key component states. Limit decoration that competes with the customer's task.
 

@@ -69,3 +69,9 @@ Restaurant menus can exceed this generator's 30-item starting limit. Agree a sma
 Inspect 390, 768, 1024 and 1440px widths. Make the headline longer, remove the images, turn off JavaScript and walk through the page using a keyboard. A person should still find the offer, location/service area and next action. Confirm focus, contrast, text expansion, meaningful alt text and destinations on a real device. Automated checks help; they do not certify accessibility or native-language quality.
 
 After a real client pilot, record one thing a visitor could not find. Change the relevant component or prompt, check the other two sectors, and keep a small regression example. That is how the shared system gets stronger through use.
+
+## The system is a foundation, not the art direction
+
+Use the [designer playbook](designer-playbook.md) before choosing a client direction. The table above documents default portable tokens, not a rule that restaurants must be terracotta or barbers navy. The runnable restaurant now leads with permitted images when present; the barber uses a large opening and side-by-side service heading/list; trades uses an early coverage panel and compact work list. These are three starting demonstrations. For richer illustration, motion or a bespoke shape family, implement the necessary source changes and review the actual output.
+
+Generated Make and Sites prompts contain the same design method inline, so they can create a tailored world without assuming access to repository skills. Functional acceptance and creative review remain separate.

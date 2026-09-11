@@ -157,7 +157,11 @@ export async function writeHandoff({ brief, root, outDir }) {
     status: "draft",
     approvals: { ...brief.approvals, provenance: false },
   });
-  const intro = `# Project handoff\n\nSource: tanwithme / barcelona-local-sites-starter.\nSource content digest: ${contentDigest(brief)}. Source status: ${brief.status}. New builder status: draft.\n\nThese are content and working instructions, not credentials or publication permission. Confirm actual files and tools. Preserve shared facts/prices across ca/es/en. Use only the supplied, rights-cleared images. Never invent claims or contact details. Keep unknowns inactive. A new tool creates a new draft: recheck the actual output, native language copy, rights, legal text, owner control and publication approval. Private approval evidence stays outside this export; approved flags are recorded assertions, not identity proof.\n\n`;
+  const designMethod = await readFile(
+    path.join(root, "docs/designer-playbook.md"),
+    "utf8",
+  );
+  const intro = `# Project handoff\n\nSource: tanwithme / barcelona-local-sites-starter.\nSource content digest: ${contentDigest(brief)}. Source status: ${brief.status}. New builder status: draft.\n\nThese are content and working instructions, not credentials or publication permission. Confirm actual files and tools. Preserve shared facts/prices across ca/es/en. Use the supplied, rights-cleared business photography. Original illustrations may be authored as illustrations under the design method; never present them as real business evidence. Never invent claims or contact details. Keep unknowns inactive. A new tool creates a new draft: recheck the actual output, native language copy, rights, legal text, owner control and publication approval. Private approval evidence stays outside this export; approved flags are recorded assertions, not identity proof.\n\n`;
   for (const [target, prompt] of [
     ["sites-prompt.md", "05-sites.md"],
     ["figma-prompt.md", "06-figma.md"],
@@ -170,6 +174,8 @@ export async function writeHandoff({ brief, root, outDir }) {
       target,
       intro +
         instructions +
+        "\n\n## Design method\n\n" +
+        designMethod +
         "\n\n## Content for this draft\n\n```json\n" +
         JSON.stringify(content, null, 2) +
         "\n```\n\n## Draft provenance\n\n```json\n" +
@@ -179,7 +185,12 @@ export async function writeHandoff({ brief, root, outDir }) {
   }
   files.set(
     "figma-make-prompt.md",
-    figmaMakePrompt(content, designTokens(brief.business.sector), provenance),
+    figmaMakePrompt(
+      content,
+      designTokens(brief.business.sector),
+      provenance,
+      designMethod,
+    ),
   );
   files.set("content.json", JSON.stringify(content, null, 2) + "\n");
   files.set(
@@ -238,7 +249,9 @@ export async function writeHandoff({ brief, root, outDir }) {
   return { outDir: out, files: files.size };
 }
 
-export function figmaMakePrompt(content, tokens, provenance) {
+export function figmaMakePrompt(content, tokens, provenance, designMethod) {
+  if (!designMethod?.trim())
+    throw new Error("A self-contained design method is required");
   return `# Build this Barcelona business website
 
 Create a functional, responsive PRIVATE DRAFT website for the business described below. Use the supplied content as the source of truth. This is a website-building request for Figma Make; it requires no access to another chat, repository skill or connector.
@@ -246,12 +259,16 @@ Create a functional, responsive PRIVATE DRAFT website for the business described
 ## Visitor experience
 - Help a visitor understand the offer and take one clear next action. Adapt composition to the actual business; do not turn every section into a card. For trades, show service area before the service list. For a restaurant or barber, make services/menu details easy to scan.
 - Create complete ca/es/en language journeys with a visible Català · Español · English switch, matching facts/prices and appropriate document language. Use the exact supplied copy as draft text; do not invent native-speaker approval. Include legal/privacy pages in every language.
-- Use the concrete colors and type choices below. Build mobile first; inspect 390, 768, 1024 and 1440px widths, long text, keyboard focus and contrast. Main actions should be easy to tap and the layout should remain useful without images.
-- Use only the approved image files attached to this prompt. Asset paths below are filenames, not accessible URLs. If files are absent, omit the gallery and make a strong text-led layout. Never scrape Instagram or create fake business photos, reviews, awards, prices or qualifications.
+- The colors and type choices below describe the portable fallback example, not a mandatory identity. Keep them when appropriate; otherwise choose a coherent business-specific palette and update the implemented tokens together. Build mobile first; inspect 390, 768, 1024 and 1440px widths, long text, keyboard focus and contrast. Main actions should be easy to tap and the layout should remain useful without images.
+- Use only approved supplied photographs as evidence of this business. Asset paths below are filenames, not accessible URLs. If photographs are absent, omit the photo gallery and use a strong typographic layout or a coherent original illustration family following the design method. Do not pretend an illustration shows actual staff, premises, customers or work. Never scrape Instagram or create fake business photos, reviews, awards, prices or qualifications.
 - Build ordinary WhatsApp enquiry links only for a supplied verified international number. Encode the generic locale message. A message is not a confirmed booking. Provide the supplied phone fallback. If contacts are missing, show an inactive draft state, never a fake number or a working submit button.
 - Use shared catalog prices. Null prices, missing hours or legal text remain visibly unresolved in this private draft; do not invent values. Keep the fictional/demo label when sourceStatus is demo. Do not describe real draft facts as approved just because a file supplied them.
 - Prefer a static implementation with no forms, customer database, login, payments, live feeds, trackers or unnecessary remote fonts. Plain map/social links only when supplied. Noindex is useful for drafts but is not access control.
 - Do not publish automatically. Return a reviewable preview, explain what works, list missing facts/assets and verify the language switch and primary action. A new renderer needs its own owner, legal and fluent-language review before release.
+
+## Design method
+
+${designMethod}
 
 ## Actual content
 

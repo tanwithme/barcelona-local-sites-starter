@@ -1,6 +1,6 @@
 # ChatGPT Sites and Figma: choose what your account can actually do
 
-Checked 7 September 2026. This repository supplies content, prompts, agent routing and a static implementation. It does not unlock a provider account or silently install a connector.
+Sites availability rechecked 11 September 2026; other provider notes checked 7 September 2026. This repository supplies content, prompts, agent routing and a static implementation. It does not unlock a provider account or silently install a connector.
 
 ## Barcelona availability comes first
 

@@ -65,3 +65,7 @@ La marca opcional y visible `tanwithme` permite comprobar una declaración de pr
 ## Estado y contribuciones
 
 Este repositorio entrega una herramienta de inicio y ejemplos, no una web comercial aprobada ni una integración externa ya ejecutada. [Comprobaciones y límites](docs/validation.md) · [Cómo contribuir](CONTRIBUTING.md) · [Licencia MIT](LICENSE).
+
+## Diseñar con carácter
+
+El copilot protege la idea del negocio, elige una dirección coherente y revisa la web real. Aprende una decisión cada vez. [Design method](docs/designer-playbook.md) · [Three worked directions](docs/design-worlds.md) · [What changed](docs/design-learning-audit.md). The detailed references are in English; the copilot explains and applies them in your chosen language.

@@ -16,13 +16,17 @@ Parte de los hechos aprobados y de una sola tarea principal del cliente. Si falt
 
 Propón una dirección visual concreta que nazca del negocio y su barrio, sin recurrir a tópicos de Barcelona ni a una plantilla intercambiable. Reutiliza reglas de calidad, pero elige la composición y el tono para este negocio. Explica la idea en una frase.
 
+Antes de diseñar, protege lo que ya funciona: una frase, una relación humana, una imagen o una interacción. Define qué debe sentir y poder hacer el visitante. Lee docs/designer-playbook.md si está disponible. Considera brevemente tres maneras distintas de producir esa experiencia y elige una viable; no me obligues a escoger entre tres webs completas.
+
+Busca coherencia, no uniformidad: una familia de formas, roles de color y tipografía; distintas escalas y ritmos según el trabajo de cada sección. Quita lo gratuito sin borrar el carácter. No conviertas una corrección estética en una prohibición de los enlaces subrayados o del punt volat catalán. Con pocas fotos, puedes proponer ilustraciones originales coherentes, siempre como ilustración y nunca como prueba falsa del negocio. No copies personajes o identidad de una referencia.
+
 Entrega:
 1. Orden de secciones en móvil y cómo cambia en escritorio.
 2. Un sistema pequeño de color, tipografía, espaciado y componentes; especifica foco visible, contraste legible y comportamiento de etiquetas largas.
 3. Textos alineados en catalán, español de España e inglés: titular, explicación breve, oferta, botones, contacto y mensajes relevantes. Mantén los mismos hechos; redacta de forma natural en cada idioma.
 4. Un selector visible “Català · Español · English” que conserve la página o tarea al cambiar de idioma.
 5. Plan de imágenes reales: archivo, uso, recorte, texto alternativo y permiso. Si faltan fotos, usa una composición tipográfica o un marcador de borrador; no simules fotos reales del negocio.
-6. Una prueba en móvil para que otra persona entienda la oferta y alcance la acción sin explicación.
+6. Una revisión del ritmo completo y de si conservamos la personalidad, separada de las comprobaciones técnicas. Una prueba en móvil para que otra persona entienda la oferta y alcance la acción sin explicación.
 
 Si el botón abre WhatsApp, deja claro que es una solicitud: “Demana cita”, “Pide cita” o “Ask for an appointment”. No finjas una reserva confirmada. Incluye una vía alternativa apropiada. Evita formularios y recursos de terceros si no aportan una utilidad concreta.
 

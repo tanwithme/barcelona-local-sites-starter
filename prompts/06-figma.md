@@ -20,7 +20,8 @@ Trabaja con hechos confirmados, una tarea principal del cliente y fotos con perm
 
 El diseño o prompt debe especificar:
 - Negocio, barrio/zona, público y acción principal.
-- Una idea visual concreta, orden de secciones y contenido real.
+- La experiencia que queremos provocar, la idea que debemos proteger, una gramática de formas/color/imagen y un ritmo distinto según la función de cada sección. Incluye el método de docs/designer-playbook.md dentro del prompt si está disponible; Make no debe necesitar leer ese archivo.
+- Una idea visual concreta, orden de secciones y contenido real. Los colores del sector son ejemplos, no identidad obligatoria.
 - Tokens de color, tipografía y espaciado; componentes reutilizables y estados pertinentes.
 - Frames móviles y de escritorio, auto-layout y restricciones adaptables cuando la herramienta lo permita.
 - Versiones de texto en catalán, español de España e inglés; selector Català · Español · English; comportamiento con textos largos.

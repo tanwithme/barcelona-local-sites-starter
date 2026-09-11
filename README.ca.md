@@ -49,3 +49,7 @@ Els preus proposats són exemples, no promeses d'ingressos. WhatsApp serveix per
 La marca opcional i visible `tanwithme` declara la procedència del pack. No recull dades de visites ni permet trobar tots els webs de Barcelona. El titular pot demanar que es retiri. [Com funciona](docs/provenance-and-research.md)
 
 [Comprovacions i límits](docs/validation.md) · [Contribucions](CONTRIBUTING.md) · [Llicència MIT](LICENSE)
+
+## Dissenyar amb caràcter
+
+El copilot preserva la idea del negoci, tria una direcció coherent i revisa el web real. Aprèn una decisió cada vegada. [Design method](docs/designer-playbook.md) · [Three worked directions](docs/design-worlds.md) · [What changed](docs/design-learning-audit.md). The detailed references are in English; the copilot explains and applies them in your chosen language.

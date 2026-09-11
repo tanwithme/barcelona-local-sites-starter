@@ -66,3 +66,10 @@ Builds stage their output, replace only a directory marked `.generated` and reta
 Use client-owned domain/hosting accounts and explain renewal costs and who can change hours, photos and prices. Transfer the source, permitted assets and tested backup before considering handoff complete. Preserve existing email/DNS when connecting a domain. No deployment or purchase happens from this repository's commands.
 
 Private data belongs in ignored `private/` or `clients/`, never in screenshots or issues on a public repository. `.gitignore` is a convenience, not proof of secrecy; inspect staged files before pushing. Actual Sites IDs/configuration belong in ignored `.openai/hosting.json`, using current installed provider tools. The checked-in example is not a deployment configuration for a registered Site.
+
+
+## Maintain the design method
+
+`docs/designer-playbook.md` is the canonical standalone design method. The design skill reads it; `writeHandoff` embeds it into all three builder prompts. Do not maintain separate shortened copies that lose the protected idea or review loop. Missing method content must stop export rather than silently producing a generic prompt. Regenerate handoffs after a method change.
+
+Run the [design review](../templates/design-review.md) on source/CSS changes. Keep functional checks distinct from aesthetic judgment. Existing studio installs are preserved on rerun: compare and back up before explicitly updating one. This repository update does not silently upgrade previously installed studios or client sites.

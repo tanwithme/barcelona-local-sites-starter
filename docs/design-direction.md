@@ -19,3 +19,8 @@ Date: 2026-09-07. This is a reusable local-business starting point, not a claim 
 **Checks:** meaningful Node tests for missing translations, output escaping, release gates, marker verification, stale output and paths; responsive/manual keyboard checks where available; no claim of accessibility certification. Public business launch additionally needs owner approval, actual destinations, rights, local-language review, live privacy checks and handoff.
 
 **Learning:** one observed failure, its smallest repair and a repeatable check. Promote a shared rule after two real projects by default; a serious documented failure can justify immediate protection, reviewed after the next use.
+
+
+## Revision: 2026-09-11
+
+The controlling design constraint was under-specified judgment: novices received a safe scaffold but too little help preserving character. [The playbook](designer-playbook.md) now protects the intended feeling, varies section rhythm within a common grammar, uses scarce assets creatively and learns from actual corrections. Existing palette choices are fallback examples. See the [audit](design-learning-audit.md) for the source-grounded reasoning and [worked examples](design-worlds.md) for contrasts. This revision does not claim owner acceptance or conversion gains.

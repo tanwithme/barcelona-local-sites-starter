@@ -49,3 +49,7 @@ Prices are scope examples, not earnings promises. WhatsApp starts an enquiry; th
 The optional, visible lowercase `tanwithme` marker declares the starter's provenance. It collects no visitor data and cannot discover every Barcelona site. Owners can remove it. [Provenance and research](docs/provenance-and-research.md)
 
 [Validation and limits](docs/validation.md) · [Contributing](CONTRIBUTING.md) · [MIT license](LICENSE)
+
+## Design with character
+
+The copilot protects the business idea, chooses a coherent direction and reviews the actual website. Learn one decision at a time. [Design method](docs/designer-playbook.md) · [Three worked directions](docs/design-worlds.md) · [What changed](docs/design-learning-audit.md). The detailed references are in English; the copilot explains and applies them in your chosen language.

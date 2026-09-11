@@ -77,3 +77,12 @@ Ask the coach to explain any of these in your chosen language with an example fr
 **When something breaks:** copy the error, say what you expected, and describe the last change. Remove passwords, tokens, private customer messages and other personal information. The assistant should preserve the working version, investigate one likely cause and tell you what it actually tested.
 
 For a route through the whole project, use [the learning path](learning-path.md).
+
+
+## The page works, but it feels generic
+
+Tell the copilot what feels wrong in ordinary language: “It lost its warmth”, “Everything looks like the same card”, or “We have one photo and want some personality.” It will use the [design method](designer-playbook.md), preserve the strongest idea, and make one reviewable change while explaining why. You do not need to know design terminology.
+
+With no photos, ask for a deliberate typographic design or a consistent original illustration family. Illustration must not pretend to show real staff, premises or past work. For a busy repair business, clarity can be the right personality; playfulness is not compulsory.
+
+If you dislike the revision, ask: “Keep what worked in the last version and change how we create the feeling.” The copilot should compare actual previews and restore the earlier version if necessary. It should not turn your feedback into a rule for every other client.

@@ -77,3 +77,9 @@ Use the repository's actual provenance format. Do not place an invented attribut
 For the local starter, inspect `package.json` and follow the documented build/check commands. Run the relevant checks after changes. Inspect the rendered result at phone and desktop sizes and test the primary customer action. Do not label source inspection as a visual test, or an automated check as a native-language review.
 
 Report the artifact or file changed, what was actually checked, one material unresolved issue if present and the next action. Use precise states: drafted, built, checked locally, published, accepted by the owner, used by a customer. A later state never follows automatically from an earlier one.
+
+## Design judgment
+
+For a new visual direction, a redesign, “more personality”, or “this feels generic”, read `docs/designer-playbook.md` and use `bcn-copy-design`. Protect the desired feeling and strongest existing asset/idea before simplifying. Distinguish coherence from uniformity. Do not equate removal of ornamental marks with removal of personality, accessible link underlines or Catalan punctuation. Use `docs/design-worlds.md` for contrasting examples, never as mandatory sector styles.
+
+The static generator is a starting artifact. Adapt source composition deliberately when needed; do not claim arbitrary features exist because a prompt describes them. For handoffs, include the design method inline. Verify functional readiness and creative quality separately using `templates/design-review.md`; report actual visitor outcomes only when observed.

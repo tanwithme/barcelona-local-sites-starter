@@ -28,3 +28,7 @@ Return a short table: check, evidence, result, next action. Allowed results: pas
 Do not publish through an unresolved factual, permissions or required approval failure. Complete a usable preview and name the precise remaining decision. If publication is authorized and checks pass, use the selected platform's supported release procedure, retain rollback information, and verify the actual public URL afterward.
 
 Call the outcome by its observed state: locally checked, published, owner accepted or used by a customer. End with one real-world test: ask someone unfamiliar with the site to complete the primary task without coaching and record where they hesitate.
+
+## Review the design as well as the build
+
+Use `templates/design-review.md` and the critique in `docs/designer-playbook.md`. Inspect the whole page, not only overflow or the hero. Check whether cleanup preserved the intended feeling, section differences share a grammar, shapes have deliberate roles and the business remains recognizable. Do not report model critique as audience evidence. A design issue is not automatically a release blocker; distinguish owner-requested creative changes from broken actions, missing facts or inaccessible content.

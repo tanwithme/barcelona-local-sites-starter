@@ -1,7 +1,7 @@
 ---
 title: What has actually been checked
-updated: 2026-09-07
-status: local-validation-v1.1
+updated: 2026-09-11
+status: local-validation-v1.2
 tags: [barcelona, validation]
 ---
 
@@ -48,3 +48,15 @@ The supplied video's full existing caption transcript was reviewed and rendered 
 Give one beginner the ZIP and only the first README instruction. Observe whether they can begin a fictional exercise without help from the maintainer. Then, with one consenting owner and competent Catalan, Spanish and English readers, check the real draft's facts, natural copy, main action and edit/rollback handoff. Keep the first point of confusion and use it to improve the next version.
 
 Sites and Figma adapters are prepared; no Figma design file or ChatGPT Site was created as part of this starter. Regional/account availability and actual deployed endpoint behavior remain provider-specific checks.
+
+
+## Design revision, version 1.2 — 11 September 2026
+
+- 33 Node tests pass locally, including complete canonical design-method delivery in all three generated handoffs and in a fresh desktop-style installation. Existing release, rollback, client isolation and provenance protections pass.
+- Restaurant, barber and trades were each built and opened in Chromium in ca/es/en at 390, 768, 1024 and 1440px: 36 combinations with no horizontal overflow. Six full-page Spanish screenshots (phone and desktop for each sector) were visually inspected for hierarchy, spacing, section rhythm and legibility. This is a bounded visual review, not continuous reading of all translations or a cross-browser certification.
+- Restaurant keyboard navigation reached the skip link. Switching from the Spanish trades legal page to Catalan preserved the legal route and document language. A 320px Catalan trades reflow check passed.
+- These contact-free, image-free fictional seeds intentionally keep contact actions inactive. WhatsApp encoding and image-byte protections have synthetic automated coverage; no real enquiry was sent, no customer images were introduced, and this pass does not establish live contact performance or native-language acceptance.
+- The revised method is linked from the offline welcome, three READMEs, design skill and novice help. It carries through the existing eight prompts/six skills without requiring a new connector.
+- Source review included the sequence of design corrections, including the later requests to restore playfulness and improve shape coherence. Only abstracted principles are distributed. No private conversation, client photographs, reference artwork or personnel details were added.
+
+The stronger method remains a working hypothesis about better design practice. A real novice's first use, owner acceptance and actual visitor behavior are the next evidence. Earlier source commit `dc0dcab` preserves the previous starter for comparison/rollback; existing studio/client installations are not automatically overwritten.

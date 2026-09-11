@@ -369,3 +369,90 @@ html {
     outline: 3px solid Highlight;
   }
 }
+
+/* Sector examples express different section jobs; they are not mandatory brands. */
+[data-sector="restaurant"] .hero h1 {
+  max-width: 12ch;
+}
+[data-sector="restaurant"] .contact {
+  border-radius: 48% 48% 0 0 / 3rem 3rem 0 0;
+  padding-top: 4.5rem;
+}
+[data-sector="restaurant"] .gallery:has(img) {
+  padding-top: 1rem;
+}
+[data-sector="restaurant"] .gallery img:first-child {
+  grid-column: 1 / -1;
+  max-height: 620px;
+  aspect-ratio: 16 / 9;
+}
+[data-sector="barber"] .hero {
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  padding-bottom: 4rem;
+}
+[data-sector="barber"] .hero h1 {
+  max-width: 17ch;
+  font-size: clamp(3rem, 8vw, 8rem);
+  line-height: 0.98;
+}
+[data-sector="barber"] .intro {
+  max-width: 42rem;
+  margin-left: auto;
+}
+[data-sector="barber"] .catalog {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 0 4rem;
+}
+[data-sector="barber"] .catalog > .small {
+  grid-column: 2;
+}
+[data-sector="barber"] .service h3 {
+  font-size: clamp(1.5rem, 2.2vw, 2rem);
+}
+[data-sector="barber"] .contact {
+  border-top: 0.6rem solid var(--accent);
+  background: var(--page);
+}
+[data-sector="trades"] .hero {
+  padding: 3rem 0;
+  align-items: start;
+}
+[data-sector="trades"] .hero h1 {
+  font-size: clamp(2.5rem, 4.7vw, 4.8rem);
+}
+[data-sector="trades"] .visit {
+  background: var(--surface);
+  border: 0;
+  padding: 2rem;
+  border-radius: 0 2rem 0 0;
+  margin-bottom: 2rem;
+}
+[data-sector="trades"] .catalog > div {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 3rem;
+}
+[data-sector="trades"] .service {
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+}
+@media (max-width: 760px) {
+  [data-sector="barber"] .catalog {
+    display: block;
+  }
+  [data-sector="barber"] .intro {
+    margin-left: 0;
+  }
+  [data-sector="trades"] .catalog > div {
+    grid-template-columns: 1fr;
+  }
+  [data-sector="trades"] .visit {
+    padding: 1.5rem;
+  }
+  [data-sector="restaurant"] .contact {
+    border-radius: 48% 48% 0 0 / 1.5rem 1.5rem 0 0;
+    padding-top: 3rem;
+  }
+}
