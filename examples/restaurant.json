@@ -63,87 +63,87 @@
   "copy": {
     "ca": {
       "eyebrow": "Gràcia, Barcelona",
-      "headline": "Un cafè. Una pausa. El barri.",
-      "intro": "Una pàgina de mostra per aprendre a presentar un negoci del barri amb claredat. No correspon a cap establiment real.",
-      "sectionTitle": "La carta, a mà",
+      "headline": "Un cafè i una estona per a tu.",
+      "intro": "Imagina que passes per aquí i vols saber què pots prendre. Aquesta cafeteria fictícia ens serveix per provar com explicar-ho al mòbil.",
+      "sectionTitle": "Què et ve de gust?",
       "visitTitle": "Abans de venir",
       "visitBody": "L’horari, l’adreça i les condicions de reserva s’han de confirmar amb el negoci.",
-      "contactTitle": "Parlem-ne",
-      "contactBody": "La reserva només queda confirmada quan el negoci te la confirmi explícitament.",
+      "contactTitle": "Vols preguntar per una taula?",
+      "contactBody": "En una web real, aquest missatge serviria per consultar una taula. La reserva quedaria pendent de la confirmació del negoci. Aquí estem practicant; no s’envia cap missatge.",
       "cta": "Consulta disponibilitat",
       "message": "Hola, voldria consultar disponibilitat.",
       "items": [
         {
           "name": "Cafès",
-          "description": "Afegeix-hi les opcions reals del negoci.",
+          "description": "Indica les opcions i el preu de cada cafè. Així es poden comparar sense haver de preguntar.",
           "id": "item-1"
         },
         {
           "name": "Esmorzars",
-          "description": "Explica què s’hi serveix amb paraules senzilles.",
+          "description": "Explica què inclou cada esmorzar. Confirma ingredients i preus abans de publicar.",
           "id": "item-2"
         },
         {
           "name": "Per compartir",
-          "description": "Inclou només plats aprovats pel negoci.",
+          "description": "Posa el nom dels plats reals i indica què inclou cada opció. Evita prometre racions que el negoci no hagi confirmat.",
           "id": "item-3"
         }
       ]
     },
     "es": {
       "eyebrow": "Gràcia, Barcelona",
-      "headline": "Un café. Una pausa. El barrio.",
-      "intro": "Una página de muestra para aprender a presentar un negocio del barrio con claridad. No corresponde a ningún establecimiento real.",
-      "sectionTitle": "La carta, a mano",
+      "headline": "Un café y un rato para ti.",
+      "intro": "Imagina que pasas por aquí y quieres saber qué puedes tomar. Esta cafetería ficticia nos sirve para probar cómo contarlo en el móvil.",
+      "sectionTitle": "¿Qué te apetece?",
       "visitTitle": "Antes de venir",
       "visitBody": "El horario, la dirección y las condiciones de reserva deben confirmarse con el negocio.",
-      "contactTitle": "Hablemos",
-      "contactBody": "La reserva solo queda confirmada cuando el negocio te la confirme expresamente.",
+      "contactTitle": "¿Quieres preguntar por una mesa?",
+      "contactBody": "En una web real, este mensaje serviría para consultar una mesa. La reserva quedaría pendiente de la confirmación del negocio. Aquí estamos practicando; no se envía ningún mensaje.",
       "cta": "Consulta disponibilidad",
       "message": "Hola, me gustaría consultar disponibilidad.",
       "items": [
         {
           "name": "Cafés",
-          "description": "Añade las opciones reales del negocio.",
+          "description": "Indica las opciones y el precio de cada café. Así se pueden comparar sin tener que preguntar.",
           "id": "item-1"
         },
         {
           "name": "Desayunos",
-          "description": "Explica qué se sirve con palabras sencillas.",
+          "description": "Cuenta qué incluye cada desayuno. Confirma ingredientes y precios antes de publicar.",
           "id": "item-2"
         },
         {
           "name": "Para compartir",
-          "description": "Incluye solo platos aprobados por el negocio.",
+          "description": "Pon el nombre de los platos reales y explica qué incluye cada opción. Evita prometer raciones que el negocio no haya confirmado.",
           "id": "item-3"
         }
       ]
     },
     "en": {
       "eyebrow": "Gràcia, Barcelona",
-      "headline": "A coffee. A pause. The neighbourhood.",
-      "intro": "A sample page for learning how to present a local business clearly. This does not represent a real venue.",
-      "sectionTitle": "The menu, within reach",
+      "headline": "A coffee and a little time for yourself.",
+      "intro": "Imagine walking past and wanting to know what you can order. This fictional café helps us try out how to explain that on a phone.",
+      "sectionTitle": "What do you feel like?",
       "visitTitle": "Before you visit",
       "visitBody": "Opening hours, the address and reservation terms need the business owner’s confirmation.",
-      "contactTitle": "Let’s talk",
-      "contactBody": "Your reservation is confirmed only when the business explicitly confirms it.",
+      "contactTitle": "Want to ask about a table?",
+      "contactBody": "On a real site, this message would ask about a table. The business would still need to confirm the reservation. This is practice; no message is sent.",
       "cta": "Ask about availability",
       "message": "Hello, I would like to ask about availability.",
       "items": [
         {
           "name": "Coffee",
-          "description": "Add the business’s actual options.",
+          "description": "Show the coffee options and their prices, so someone can compare them without asking.",
           "id": "item-1"
         },
         {
           "name": "Breakfast",
-          "description": "Explain what is served in simple words.",
+          "description": "Say what each breakfast includes. Confirm ingredients and prices before publishing.",
           "id": "item-2"
         },
         {
           "name": "To share",
-          "description": "Include only dishes approved by the business.",
+          "description": "Name the actual dishes and explain what each option includes. Do not promise portion sizes the owner has not confirmed.",
           "id": "item-3"
         }
       ]

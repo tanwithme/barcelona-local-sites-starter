@@ -64,28 +64,28 @@
     "ca": {
       "eyebrow": "Sants, Barcelona",
       "headline": "Què cal reparar?",
-      "intro": "Una pàgina de mostra per aprendre a presentar un negoci del barri amb claredat. No correspon a cap establiment real.",
-      "sectionTitle": "Feines que podem valorar",
+      "intro": "Quan alguna cosa falla, primer vols saber si et poden ajudar. Aquest negoci fictici ens serveix per provar una web que ho deixi clar.",
+      "sectionTitle": "Explica quina feina necessites",
       "visitTitle": "On treballem",
       "visitBody": "Confirma amb el negoci la zona de servei, l’horari de contacte i les possibles despeses de desplaçament.",
-      "contactTitle": "Parlem-ne",
-      "contactBody": "Una consulta no confirma cap cita, pressupost ni termini. Espera la resposta del negoci.",
+      "contactTitle": "Què ha passat?",
+      "contactBody": "En una web real, començaries explicant el problema en una frase. El negoci hauria de valorar la feina i confirmar preu i disponibilitat. Aquesta demo no atén urgències ni envia consultes.",
       "cta": "Demana pressupost",
       "message": "Hola, voldria consultar una reparació.",
       "items": [
         {
           "name": "Petites reparacions",
-          "description": "Servei de mostra: confirma’n l’abast, la durada i el preu.",
+          "description": "Posa exemples de feines que el professional accepta. Si una feina queda fora del servei, digues-ho.",
           "id": "item-1"
         },
         {
           "name": "Manteniment",
-          "description": "Servei de mostra: confirma’n l’abast, la durada i el preu.",
+          "description": "Explica què es revisa i què inclou el servei, un cop confirmat amb el professional.",
           "id": "item-2"
         },
         {
           "name": "Consulta prèvia",
-          "description": "Servei de mostra: confirma’n l’abast, la durada i el preu.",
+          "description": "Indica quina informació cal per valorar la feina i si la visita té cost. No prometis un diagnòstic immediat.",
           "id": "item-3"
         }
       ]
@@ -93,28 +93,28 @@
     "es": {
       "eyebrow": "Sants, Barcelona",
       "headline": "¿Qué hay que reparar?",
-      "intro": "Una página de muestra para aprender a presentar un negocio del barrio con claridad. No corresponde a ningún establecimiento real.",
-      "sectionTitle": "Trabajos que podemos valorar",
+      "intro": "Cuando algo falla, primero quieres saber si pueden ayudarte. Este negocio ficticio nos sirve para probar una web que lo deje claro.",
+      "sectionTitle": "Cuenta qué trabajo necesitas",
       "visitTitle": "Dónde trabajamos",
       "visitBody": "Confirma con el negocio la zona de servicio, el horario de contacto y los posibles gastos de desplazamiento.",
-      "contactTitle": "Hablemos",
-      "contactBody": "Una consulta no confirma una cita, un presupuesto ni un plazo. Espera la respuesta del negocio.",
+      "contactTitle": "¿Qué ha pasado?",
+      "contactBody": "En una web real, empezarías contando el problema en una frase. El negocio tendría que valorar el trabajo y confirmar precio y disponibilidad. Esta demo no atiende urgencias ni envía consultas.",
       "cta": "Pide presupuesto",
       "message": "Hola, me gustaría consultar una reparación.",
       "items": [
         {
           "name": "Pequeñas reparaciones",
-          "description": "Servicio de muestra: confirma el alcance, la duración y el precio.",
+          "description": "Pon ejemplos de trabajos que el profesional acepta. Si un trabajo queda fuera del servicio, dilo.",
           "id": "item-1"
         },
         {
           "name": "Mantenimiento",
-          "description": "Servicio de muestra: confirma el alcance, la duración y el precio.",
+          "description": "Explica qué se revisa y qué incluye el servicio, una vez confirmado con el profesional.",
           "id": "item-2"
         },
         {
           "name": "Consulta previa",
-          "description": "Servicio de muestra: confirma el alcance, la duración y el precio.",
+          "description": "Indica qué información hace falta para valorar el trabajo y si la visita tiene coste. No prometas un diagnóstico inmediato.",
           "id": "item-3"
         }
       ]
@@ -122,28 +122,28 @@
     "en": {
       "eyebrow": "Sants, Barcelona",
       "headline": "What needs fixing?",
-      "intro": "A sample page for learning how to present a local business clearly. This does not represent a real venue.",
-      "sectionTitle": "Jobs we can assess",
+      "intro": "When something breaks, you first want to know whether someone can help. This fictional business lets us try a website that makes that clear.",
+      "sectionTitle": "Tell us what needs doing",
       "visitTitle": "Where we work",
       "visitBody": "Confirm the service area, contact hours and any call-out charges with the business.",
-      "contactTitle": "Let’s talk",
-      "contactBody": "An enquiry does not confirm an appointment, quote or timescale. Wait for the business to reply.",
+      "contactTitle": "What happened?",
+      "contactBody": "On a real site, you would start by describing the problem in a sentence. The business would need to assess the job and confirm price and availability. This demo does not handle emergencies or send enquiries.",
       "cta": "Request a quote",
       "message": "Hello, I would like to ask about a repair.",
       "items": [
         {
           "name": "Small repairs",
-          "description": "Sample service: confirm the scope, duration and price.",
+          "description": "Give examples of jobs the professional accepts. Say when a job falls outside the service.",
           "id": "item-1"
         },
         {
           "name": "Maintenance",
-          "description": "Sample service: confirm the scope, duration and price.",
+          "description": "Explain what gets checked and what the service includes, once the professional confirms.",
           "id": "item-2"
         },
         {
           "name": "Initial enquiry",
-          "description": "Sample service: confirm the scope, duration and price.",
+          "description": "Say what information is needed to assess the job and whether a visit costs anything. Do not promise an immediate diagnosis.",
           "id": "item-3"
         }
       ]

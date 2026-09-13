@@ -91,6 +91,12 @@ test("all builder handoffs include the canonical design method and remain privat
           await readFile(path.join(root, "docs/local-discovery.md"), "utf8"),
         ),
       );
+      assert.ok(
+        prompt.includes(
+          await readFile(path.join(root, "docs/studio-voice.md"), "utf8"),
+        ),
+        name + " omitted the voice method",
+      );
       assert.ok(prompt.includes(seed.copy.ca.headline));
       assert.ok(prompt.includes(seed.copy.es.headline));
       assert.ok(prompt.includes(seed.copy.en.headline));

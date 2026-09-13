@@ -67,6 +67,8 @@ The portable starter currently accepts approved local raster images with rights 
 
 ## 6. Copy is part of the composition
 
+Use [the studio voice guide](studio-voice.md) alongside this method. Listen for the owner's actual words and the customer's question. Give important claims a concrete detail or reason. The copilot can sound like a thoughtful studio partner while the website retains the client's own voice. Let each language find its natural sentence; preserve the same promises.
+
 Lead with a recognizable customer situation and a concrete offer. Keep verified service detail easy to find; emotional language must not hide what the business does. Let the action sound like the business while saying what happens next. A WhatsApp enquiry starts a conversation and remains editable; it is not a booked appointment, checkout or automatically sent message.
 
 Preserve brand meaning across Catalan, Spanish and English, with one shared set of facts. Rewrite idiom, line breaks and labels naturally; do not translate word by word or shrink long translations until unreadable. Do not force a decorative uppercase treatment on all supporting copy. Test language switching and, if present, preserve selected options and enquiry state. Human fluent review remains separate from automated checks.

@@ -1,10 +1,10 @@
 # Barcelona local sites · tanwithme
 
-**El teu primer web útil per a un negoci de Barcelona. Una conversa, un problema real i un pas cada vegada.**
+**Pensa en un negoci del teu barri. Què li aniria bé resoldre amb un web? Comencem per aquí.**
 
 [Español](README.md) · [Català](README.ca.md) · [English](README.en.md)
 
-Pots començar sense client, sense una altra subscripció i sense saber programar.
+Pot ser una cosa tan concreta com trobar el preu d’un tall de cabells o consultar la carta des del mòbil. Amb aquest pack pots fer una primera versió, entendre per què funciona i millorar-la amb el que observis. Pots començar sense client, sense saber programar i sense una altra subscripció. El copilot t’acompanya mentre aprens a oferir aquesta feina com a servei.
 
 ## Comença amb l'enllaç
 
@@ -50,12 +50,12 @@ La marca opcional i visible `tanwithme` declara la procedència del pack. No rec
 
 [Comprovacions i límits](docs/validation.md) · [Contribucions](CONTRIBUTING.md) · [Llicència MIT](LICENSE)
 
-## Dissenyar amb caràcter
+## Que s’hi reconegui el negoci
 
-El copilot preserva la idea del negoci, tria una direcció coherent i revisa el web real. Aprèn una decisió cada vegada. [Design method](docs/designer-playbook.md) · [Three worked directions](docs/design-worlds.md) · [What changed](docs/design-learning-audit.md). The detailed references are in English; the copilot explains and applies them in your chosen language.
+Abans de triar colors, escolta com parla el propietari i què pregunten els seus clients. Conserva aquest detall quan dissenyis. Dos colors principals, un tercer amb una funció concreta i una tipografia que ajudi a llegir poden donar-hi forma. Cada secció necessita el seu ritme.
 
-## L’enfocament tanwithme studio
+El copilot t’ensenya què ha triat i per què, perquè puguis dir «això sí» o «aquí falta alguna cosa» sense saber el terme tècnic. Aquesta conversa també millora la versió següent.
 
-Dos colors principals i un tercer de suport; tipografia amb caràcter i lectura fàcil; seccions coherents amb ritmes diferents. El copilot també prepara fitxes locals i revisa la cerca i la lectura per agents, sense prometre posicions.
+[Com pensem i parlem](docs/studio-voice.md#català--fer-una-primera-versió-i-mirar-què-passa) · [Mètode de disseny](docs/designer-playbook.md) · [Prova de color i tipografia](docs/studio-lab.html) · [Cerca i fitxes locals](docs/local-discovery.md) · [Què hem après](docs/voice-learning-audit.md).
 
-[Creative direction](docs/designer-playbook.md) · [Color and type lab](docs/studio-lab.html) · [Local discovery](docs/local-discovery.md) · [Discovery prompt](prompts/09-discovery.md).
+Les referències tècniques més llargues són en anglès. El copilot les aplica i te les explica en la llengua que triïs.

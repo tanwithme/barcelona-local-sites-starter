@@ -64,28 +64,28 @@
     "ca": {
       "eyebrow": "Sant Antoni, Barcelona",
       "headline": "Un tall al teu aire.",
-      "intro": "Una pàgina de mostra per aprendre a presentar un negoci del barri amb claredat. No correspon a cap establiment real.",
-      "sectionTitle": "Serveis i temps per a tu",
+      "intro": "Potser ja saps quin tall vols. Potser prefereixes parlar-ne primer. Aquesta barberia fictícia ens ajuda a provar com donar espai a totes dues coses.",
+      "sectionTitle": "Tria què vols consultar",
       "visitTitle": "Abans de venir",
       "visitBody": "L’horari, l’adreça i les condicions de reserva s’han de confirmar amb el negoci.",
-      "contactTitle": "Parlem-ne",
-      "contactBody": "Una consulta no confirma cap cita, pressupost ni termini. Espera la resposta del negoci.",
+      "contactTitle": "Comencem pel tall que tens al cap",
+      "contactBody": "En una web real, podries explicar quin servei t’interessa i preguntar per un dia. La cita quedaria pendent de confirmació. Aquí els contactes estan desactivats.",
       "cta": "Consulta disponibilitat",
       "message": "Hola, voldria consultar disponibilitat.",
       "items": [
         {
           "name": "Tall de cabells",
-          "description": "Servei de mostra: confirma’n l’abast, la durada i el preu.",
+          "description": "Explica què inclou el tall i quant dura, quan el negoci ho confirmi.",
           "id": "item-1"
         },
         {
           "name": "Arranjament de barba",
-          "description": "Servei de mostra: confirma’n l’abast, la durada i el preu.",
+          "description": "Aclara què inclou l’arranjament; no donis per fet que tots els serveis de barba són iguals.",
           "id": "item-2"
         },
         {
           "name": "Tall i barba",
-          "description": "Servei de mostra: confirma’n l’abast, la durada i el preu.",
+          "description": "Indica si és un servei conjunt i quin preu té. No dedueixis el preu sumant els altres dos.",
           "id": "item-3"
         }
       ]
@@ -93,28 +93,28 @@
     "es": {
       "eyebrow": "Sant Antoni, Barcelona",
       "headline": "Un corte a tu manera.",
-      "intro": "Una página de muestra para aprender a presentar un negocio del barrio con claridad. No corresponde a ningún establecimiento real.",
-      "sectionTitle": "Servicios y tiempo para ti",
+      "intro": "Quizá ya sabes qué corte quieres. Quizá prefieres hablarlo primero. Esta barbería ficticia nos ayuda a probar cómo dar espacio a las dos cosas.",
+      "sectionTitle": "Elige qué quieres consultar",
       "visitTitle": "Antes de venir",
       "visitBody": "El horario, la dirección y las condiciones de reserva deben confirmarse con el negocio.",
-      "contactTitle": "Hablemos",
-      "contactBody": "Una consulta no confirma una cita, un presupuesto ni un plazo. Espera la respuesta del negocio.",
+      "contactTitle": "Empecemos por el corte que tienes en mente",
+      "contactBody": "En una web real, podrías contar qué servicio te interesa y preguntar por un día. La cita quedaría pendiente de confirmación. Aquí los contactos están desactivados.",
       "cta": "Consulta disponibilidad",
       "message": "Hola, me gustaría consultar disponibilidad.",
       "items": [
         {
           "name": "Corte de pelo",
-          "description": "Servicio de muestra: confirma el alcance, la duración y el precio.",
+          "description": "Cuenta qué incluye el corte y cuánto dura, cuando el negocio lo confirme.",
           "id": "item-1"
         },
         {
           "name": "Arreglo de barba",
-          "description": "Servicio de muestra: confirma el alcance, la duración y el precio.",
+          "description": "Aclara qué incluye el arreglo; no des por hecho que todos los servicios de barba son iguales.",
           "id": "item-2"
         },
         {
           "name": "Corte y barba",
-          "description": "Servicio de muestra: confirma el alcance, la duración y el precio.",
+          "description": "Indica si es un servicio conjunto y qué precio tiene. No deduzcas el precio sumando los otros dos.",
           "id": "item-3"
         }
       ]
@@ -122,28 +122,28 @@
     "en": {
       "eyebrow": "Sant Antoni, Barcelona",
       "headline": "A cut that feels like you.",
-      "intro": "A sample page for learning how to present a local business clearly. This does not represent a real venue.",
-      "sectionTitle": "Services, with time for you",
+      "intro": "You might know the cut you want. You might want to talk it through first. This fictional barber shop helps us try making room for both.",
+      "sectionTitle": "Choose what to ask about",
       "visitTitle": "Before you visit",
       "visitBody": "Opening hours, the address and reservation terms need the business owner’s confirmation.",
-      "contactTitle": "Let’s talk",
-      "contactBody": "An enquiry does not confirm an appointment, quote or timescale. Wait for the business to reply.",
+      "contactTitle": "Start with the cut you have in mind",
+      "contactBody": "On a real site, you could explain which service you want and ask about a day. The appointment would still need confirmation. Contact links are inactive here.",
       "cta": "Ask about availability",
       "message": "Hello, I would like to ask about availability.",
       "items": [
         {
           "name": "Haircut",
-          "description": "Sample service: confirm the scope, duration and price.",
+          "description": "Explain what the haircut includes and how long it takes, once the owner confirms.",
           "id": "item-1"
         },
         {
           "name": "Beard trim",
-          "description": "Sample service: confirm the scope, duration and price.",
+          "description": "Clarify what the beard service includes; do not assume every beard service is the same.",
           "id": "item-2"
         },
         {
           "name": "Hair and beard",
-          "description": "Sample service: confirm the scope, duration and price.",
+          "description": "Say whether this is a combined service and give its confirmed price. Do not calculate it by adding the other two.",
           "id": "item-3"
         }
       ]

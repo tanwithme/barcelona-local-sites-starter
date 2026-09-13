@@ -93,3 +93,13 @@ If you dislike the revision, ask: “Keep what worked in the last version and ch
 Use [prompt 09](../prompts/09-discovery.md). The copilot starts with the actual business model and existing profiles, fixes readable public content, then prepares the owner's next verification step. You do not need to understand structured data first. A service business without a customer-facing address needs different setup from a storefront. Website publication, Maps verification and indexing are separate results.
 
 For design, try the [color and type lab](studio-lab.html), then ask the copilot to adapt the relationship to the business. The lab is a fictional illustration of choices, not a finished customer site.
+
+## Puedes decirlo como te salga · Pots explicar-ho a la teva manera
+
+**ES:** «Sé lo que quiero, pero no sé cómo pedirlo.» Puedes empezar así. Cuenta qué te gusta de la versión que tienes y qué te hace dudar. El copilot te ayudará a probar un cambio y te explicará por qué.
+
+**CA:** «Sé què vull, però no sé com demanar-ho.» Pots començar així. Explica què t’agrada de la versió que tens i què et fa dubtar. El copilot t’ajudarà a provar un canvi i t’explicarà per què.
+
+**EN:** “I know what I want, but I don't know how to ask for it.” You can start there. Say what you like in the current version and what makes you hesitate. The copilot will help you try a change and explain why.
+
+[Cómo pensamos y hablamos / Com pensem i parlem / How we think and talk](studio-voice.md).

@@ -84,3 +84,7 @@ Run `npm run check:discovery` after the current brief's build. It inspects local
 Handoffs embed both the canonical design method and `docs/local-discovery.md`. The copilot should add the public-safe client-specific creative direction before sending to a different builder. Neither exported prompts nor this checker configure a provider account. See [local discovery](local-discovery.md).
 
 The crawler check evaluates common robots rules for Googlebot, bingbot and OAI-SearchBot on the root and three language home paths. A separate GPTBot training block is allowed. An intentional search opt-out can fail this discoverability expectation: preserve the owner's choice and report the exclusion rather than undoing it to get a pass. This is not a complete robots conformance test or evidence of an actual provider crawl.
+
+## Studio voice and copy
+
+`docs/studio-voice.md` is the shared voice method. The coaching/design skills read it, and `writeHandoff` embeds it in all three builder prompts. Keep the client's own approved voice and material promises separate from the studio's teaching voice. Do not import private transcripts into this package. Changes to fictional example copy must preserve its demo status and inactive contact details; rebuild the committed demo and offline welcome afterwards.

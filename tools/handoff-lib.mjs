@@ -165,6 +165,10 @@ export async function writeHandoff({ brief, root, outDir }) {
     path.join(root, "docs/local-discovery.md"),
     "utf8",
   );
+  const voiceMethod = await readFile(
+    path.join(root, "docs/studio-voice.md"),
+    "utf8",
+  );
   const intro = `# Project handoff\n\nSource: tanwithme / barcelona-local-sites-starter.\nSource content digest: ${contentDigest(brief)}. Source status: ${brief.status}. New builder status: draft.\n\nThese are content and working instructions, not credentials or publication permission. Confirm actual files and tools. Preserve shared facts/prices across ca/es/en. Use the supplied, rights-cleared business photography. Original illustrations may be authored as illustrations under the design method; never present them as real business evidence. Never invent claims or contact details. Keep unknowns inactive. A new tool creates a new draft: recheck the actual output, native language copy, rights, legal text, owner control and publication approval. Private approval evidence stays outside this export; approved flags are recorded assertions, not identity proof.\n\n`;
   for (const [target, prompt] of [
     ["sites-prompt.md", "05-sites.md"],
@@ -180,6 +184,8 @@ export async function writeHandoff({ brief, root, outDir }) {
         instructions +
         "\n\n## Design method\n\n" +
         designMethod +
+        "\n\n## Studio voice and ethos\n\n" +
+        voiceMethod +
         "\n\n## Local discovery method\n\n" +
         discoveryMethod +
         "\n\n## Content for this draft\n\n```json\n" +
@@ -197,6 +203,7 @@ export async function writeHandoff({ brief, root, outDir }) {
       provenance,
       designMethod,
       discoveryMethod,
+      voiceMethod,
     ),
   );
   files.set("content.json", JSON.stringify(content, null, 2) + "\n");
@@ -262,6 +269,7 @@ export function figmaMakePrompt(
   provenance,
   designMethod,
   discoveryMethod,
+  voiceMethod,
 ) {
   if (!designMethod?.trim())
     throw new Error("A self-contained design method is required");
@@ -282,6 +290,10 @@ Create a functional, responsive PRIVATE DRAFT website for the business described
 ## Design method
 
 ${designMethod}
+
+## Studio voice and ethos
+
+${voiceMethod || "Write from the real customer's situation; explain the offer with concrete facts and natural ca/es/en phrasing. Preserve the client's approved voice and promises. Studio coaching must not become customer-facing process copy."}
 
 ## Local discovery method
 

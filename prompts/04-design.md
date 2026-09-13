@@ -33,4 +33,6 @@ Si el botón abre WhatsApp, deja claro que es una solicitud: “Demana cita”, 
 No traduzcas nombres propios o direcciones oficiales sin motivo. Revisa acentos, apóstrofos, punt volat cuando proceda y coherencia de precios y horarios. Marca los textos como borradores hasta que los revise una persona competente/nativa y el propietario confirme los hechos.
 
 Si tienes acceso al proyecto y la implementación local está autorizada, aplica la dirección a los archivos adecuados, respeta el esquema existente y ejecuta las comprobaciones pertinentes. Distingue propuesta, código modificado y resultado visual realmente inspeccionado.
+
+Trabaja conmigo a partir de lo que te cuente. Escucha qué quiero resolver, enséñame un ejemplo concreto y explica por qué lo has elegido. Usa docs/studio-voice.md si puedes leerlo; si no, aplica estas mismas pautas. Una respuesta directa puede bastar. No conviertas cada duda en una lección. Conserva la voz del negocio y sus promesas; adapta el sentido al catalán, español o inglés sin copiar muletillas ni añadir jerga para sonar joven.
 ~~~

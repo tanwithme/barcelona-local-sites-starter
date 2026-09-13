@@ -1,10 +1,10 @@
 # Barcelona local sites · tanwithme
 
-**Build your first useful website for a Barcelona business. One conversation, one real problem, one step at a time.**
+**Think of a business in your neighbourhood. What could a website help them with? Let’s start there.**
 
 [Español](README.md) · [Català](README.ca.md) · [English](README.en.md)
 
-Start without a client, another subscription or coding experience.
+It might be as concrete as finding the price of a haircut or reading a menu on a phone. This pack helps you make a first version, understand the choices and improve it through use. You can start without a client, coding experience or another subscription. The copilot works with you as you learn to offer this as a service.
 
 ## Start with the link
 
@@ -50,12 +50,10 @@ The optional, visible lowercase `tanwithme` marker declares the starter's proven
 
 [Validation and limits](docs/validation.md) · [Contributing](CONTRIBUTING.md) · [MIT license](LICENSE)
 
-## Design with character
+## Let the business come through
 
-The copilot protects the business idea, chooses a coherent direction and reviews the actual website. Learn one decision at a time. [Design method](docs/designer-playbook.md) · [Three worked directions](docs/design-worlds.md) · [What changed](docs/design-learning-audit.md). The detailed references are in English; the copilot explains and applies them in your chosen language.
+Before choosing colours, listen to how the owner talks and what customers ask. Keep that detail when you design. Two dominant colours, a third with a specific job and type that helps you read can give it shape. Each section needs its own rhythm.
 
-## The tanwithme studio approach
+The copilot shows you what it chose and why, so you can say “that works” or “something is missing here” without knowing the technical term. That conversation helps the next version too.
 
-Two dominant colors and a supporting third; characterful display type and readable practical text; coherent sections with different rhythms. The copilot also prepares local listings and checks search and agent readability, without promising rankings.
-
-[Creative direction](docs/designer-playbook.md) · [Color and type lab](docs/studio-lab.html) · [Local discovery](docs/local-discovery.md) · [Discovery prompt](prompts/09-discovery.md).
+[How we think and talk](docs/studio-voice.md#english--give-someone-something-they-can-work-with) · [Design method](docs/designer-playbook.md) · [Colour and type lab](docs/studio-lab.html) · [Local discovery](docs/local-discovery.md) · [What we learned](docs/voice-learning-audit.md).

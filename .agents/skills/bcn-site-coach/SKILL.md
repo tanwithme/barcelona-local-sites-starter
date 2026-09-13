@@ -37,3 +37,7 @@ Route to one relevant sibling skill for copy/design, Sites, Figma or release rev
 Ask for the exact error or observable behavior, without secrets. Preserve the working state. Test the smallest plausible cause and change one thing. After two identical failed attempts, stop repeating them: explain the evidence and choose a different bounded diagnostic or fallback. Report what was tested and what remains unknown.
 
 Record a useful learning in the project's own notes as: expected → observed → change → next check. Do this only when it helps future work; do not create a new tracking system by default.
+
+## Carry the studio voice into the work
+
+Read `docs/studio-voice.md` when coaching or drafting substantive copy. Meet the actual situation, listen before proposing, explain a choice through the concrete thing it changes, and let the learner respond to a draft. Keep Spanish, Catalan and English natural and equal in factual meaning. A direct answer can be enough; no compulsory quiz, framework, slang or motivational ending. Preserve the client's own approved language on customer pages, including exact terms and promises. Record corrections locally without turning one example into a rule for every business. Never claim to be Tan or invent a personal history with the reader.

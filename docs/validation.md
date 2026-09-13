@@ -1,7 +1,7 @@
 ---
 title: What has actually been checked
 updated: 2026-09-13
-status: local-validation-v1.3
+status: local-validation-v1.4
 tags: [barcelona, validation]
 ---
 
@@ -71,3 +71,13 @@ The stronger method remains a working hypothesis about better design practice. A
 - Official Google, Bing, Apple, OpenAI, Schema.org and IndexNow guidance was reviewed for the dated discovery guide. Provider eligibility, private verification and account access still need checking for each real business. Local files cannot establish production HTTP behavior, indexing, AI citation, enquiries or bookings. No listing, indexing submission, DNS change or client outreach was performed for this starter revision.
 
 The creative director now carries a private client direction through revisions: two dominant colour roles with a supporting third, character and working typography, varied section jobs and a protected idea. The lab demonstrates this relationship with system fonts; it does not claim to implement a client's licensed font assets. Human language review, owner acceptance and a real novice's first use remain the next evidence. Commit `fcbe5c9` preserves version 1.2 for comparison and rollback. Existing installations are not silently overwritten.
+
+## Voice and ethos, version 1.4 — 13 September 2026
+
+- The source review used twelve excerpts from Tan-labelled turns in four work conversations, alongside current project instructions and existing voice guidance. Guest speech and transcripts without reliable speaker labels were excluded as voice evidence. The public pack contains original abstractions and adaptations; private source anchors remain outside the repository. This is a targeted review, not a complete corpus audit.
+- Welcome text, the three READMEs, coaching prompts and restaurant/barber/trades practice copy were revised. All non-copy JSON fields were compared with version 1.3: business facts, contacts, prices, status, approvals, assets and legal content are unchanged. Fictional contact routes remain inactive. The teaching placeholders are specific to each service; they are still teaching copy to replace before any real client release.
+- 37 Node tests pass locally, including the complete studio voice method in all three builder handoffs and a fresh installation with seven skills. This verifies delivery of instructions, not that every receiving model follows them or that a learner understands them.
+- Browser review covered the welcome at 390, 768, 1024 and 1440px, plus three sectors in ca/es/en at those widths: 40 combinations with no horizontal overflow and correct document languages for all example pages. Eight full-page captures were inspected: welcome phone/desktop, Catalan phone and Spanish desktop for each sector. Layout and reading hierarchy were checked; this is not native-language acceptance, an accessibility certification or a device/browser matrix.
+- 136 relative Markdown file links were checked with no missing file targets. This is not an external-link or heading-anchor audit. The current build, demo, welcome, discovery check and handoff generation pass locally.
+
+Spanish and Catalan wording is authored adaptation of the observed approach. A competent human reader and a real beginner remain the next acceptance checks. No client site, profile or message was published by this revision. Version 1.3 remains recoverable at commit `b445490`; existing studio/client folders are not automatically upgraded.

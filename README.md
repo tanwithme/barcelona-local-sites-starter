@@ -1,10 +1,10 @@
 # Barcelona local sites · tanwithme
 
-**Tu primera web útil para un negocio de Barcelona. Una conversación, un problema real y un paso cada vez.**
+**Piensa en un negocio de tu barrio. ¿Qué le vendría bien resolver con una web? Empecemos por ahí.**
 
 [Español](README.md) · [Català](README.ca.md) · [English](README.en.md)
 
-Para gente que empieza con IA. Puedes practicar sin cliente, sin comprar otra suscripción y sin saber programar. El objetivo es aprender a entregar una web que una persona pueda usar y un negocio pueda mantener.
+Puede ser algo tan concreto como encontrar el precio de un corte o consultar una carta desde el móvil. Con este pack puedes hacer una primera versión, entender por qué funciona y mejorarla con lo que observes. Puedes empezar sin cliente, sin saber programar y sin comprar otra suscripción. El copilot te acompaña mientras aprendes a ofrecer ese trabajo como un servicio.
 
 ## Empieza con el enlace
 
@@ -66,12 +66,12 @@ La marca opcional y visible `tanwithme` permite comprobar una declaración de pr
 
 Este repositorio entrega una herramienta de inicio y ejemplos, no una web comercial aprobada ni una integración externa ya ejecutada. [Comprobaciones y límites](docs/validation.md) · [Cómo contribuir](CONTRIBUTING.md) · [Licencia MIT](LICENSE).
 
-## Diseñar con carácter
+## Que se note de quién es el negocio
 
-El copilot protege la idea del negocio, elige una dirección coherente y revisa la web real. Aprende una decisión cada vez. [Design method](docs/designer-playbook.md) · [Three worked directions](docs/design-worlds.md) · [What changed](docs/design-learning-audit.md). The detailed references are in English; the copilot explains and applies them in your chosen language.
+Antes de elegir colores, escucha cómo habla el dueño y qué preguntan sus clientes. Conserva ese detalle cuando diseñes. Dos colores principales, un tercero con un trabajo concreto y una tipografía que ayude a leer pueden darle forma. Cada sección necesita su propio ritmo.
 
-## El enfoque tanwithme studio
+El copilot te enseña lo que ha elegido y por qué, para que puedas decir «esto sí» o «aquí falta algo» sin conocer el término técnico. Esa conversación también mejora la próxima versión.
 
-Dos colores principales y un tercero de apoyo; tipografía con carácter y lectura fácil; secciones coherentes con ritmos diferentes. El copilot también prepara fichas locales y revisa la búsqueda y la lectura por agentes, sin prometer posiciones.
+[Cómo pensamos y hablamos](docs/studio-voice.md#español--una-conversación-que-te-deja-probar) · [Método de diseño](docs/designer-playbook.md) · [Prueba de color y tipografía](docs/studio-lab.html) · [Búsqueda y fichas locales](docs/local-discovery.md) · [Qué aprendimos](docs/voice-learning-audit.md).
 
-[Creative direction](docs/designer-playbook.md) · [Color and type lab](docs/studio-lab.html) · [Local discovery](docs/local-discovery.md) · [Discovery prompt](prompts/09-discovery.md).
+Las referencias técnicas más largas están en inglés. El copilot las aplica y te las explica en el idioma que elijas.

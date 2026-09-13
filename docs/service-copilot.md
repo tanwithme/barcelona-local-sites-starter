@@ -7,7 +7,13 @@ tags: [business, copilot, novice, barcelona]
 
 # Build a service you can understand and maintain
 
-Tell the assistant what you want in español, català or English. It should do the technical setup, explain useful choices and help you practise without making you pass a course first.
+**ES:** Trae lo que tengas: una conversación con un negocio, una idea o una duda. El copilot te ayuda a hacer una primera versión y te explica las decisiones que te sirvan para seguir. Puedes decir «no entiendo por qué has hecho esto» y volver a mirarlo juntos.
+
+**CA:** Porta el que tinguis: una conversa amb un negoci, una idea o un dubte. El copilot t’ajuda a fer una primera versió i t’explica les decisions que et serveixin per continuar. Pots dir «no entenc per què has fet això» i tornar-ho a mirar plegats.
+
+**EN:** Bring what you have: a conversation with an owner, an idea or a question. The copilot helps you make a first version and explains the choices that help you continue. You can say “I don't understand why you did this” and look at it together.
+
+That is [the studio approach](studio-voice.md). The details below help when the work reaches that stage; ask for them in your chosen language.
 
 ## Things you can say
 

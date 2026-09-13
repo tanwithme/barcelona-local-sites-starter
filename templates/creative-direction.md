@@ -12,6 +12,7 @@ The copilot fills this in the client's ignored `private/creative-direction.md` f
 - Visitor / situation / useful next action:
 - Intended feeling and strongest existing idea to preserve:
 - Real cues from the business; inference and unknowns:
+- Client voice: approved phrases, intended relationship, language-specific choices and wording to preserve (public-safe summary only):
 - A productive tension (e.g. generous food / quiet interface):
 - Page form and how it changes layout (editorial spread, service counter, workbench…):
 - Main visual move; one strongest element per viewport:

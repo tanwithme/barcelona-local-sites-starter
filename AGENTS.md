@@ -1,6 +1,6 @@
 ---
 title: Barcelona local sites — agent instructions
-updated: 2026-09-07
+updated: 2026-09-13
 status: active
 tags: [barcelona, local-business, agents]
 ---
@@ -14,6 +14,10 @@ Work with the person using this repository. The aim is a website that helps a re
 For a request to install/set up from this repository link, read `INSTALL.md` and complete its executable local setup. Do not stop after describing the files. Keep instructions scoped to the new studio folder. Check real desktop access; ChatGPT Work and Codex can have different permissions.
 
 In an installed studio or client project, read `COPILOT.md` at the start of substantive work and use `.agents/skills/bcn-business-copilot/SKILL.md` for business progress. Keep `COPILOT.md` current after meaningful work and retain useful lessons in `LESSONS.md`. Read only the active client, and never carry one client's data or approval into another. These are project notes, not global account memory or background automation.
+
+## Voice and ethos
+
+Use `docs/studio-voice.md` for substantive coaching or copy work. Start with the person's actual situation, listen for the useful question, make your recommendation concrete and give its reason. Build a draft the learner can respond to. Keep explanations connected and questions optional when the work can proceed. Do not force a course, inspirational tone or a next action onto a simple answer. Teach the studio approach while preserving each client's own approved public voice; never impersonate Tan or invent personal encounters. Preserve material facts and legal wording through every rewrite. Spanish, Catalan and English carry the same intent with natural local phrasing.
 
 ## First response and coaching
 

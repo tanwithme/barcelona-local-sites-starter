@@ -42,3 +42,7 @@ Use `bcn-copy-design` for design/copy, `bcn-sites-handoff` for available Sites w
 During design, protect the visitor feeling as well as task completion. Use the existing design skill and show one concrete choice at a time. Keep creative lessons in this client's `LESSONS.md`: expected, observed, changed, retested, exception. A single preference stays local until another context supports broader reuse; do not automatically change global skills or other clients.
 
 For a new owner's discovery work, use `bcn-local-discovery`. Prepare one eligible, accurate listing and one owner action before suggesting a content calendar or multiple platforms. Keep profile status separate from website indexing. Missing verification access should not block authorized website improvements and draft listing copy.
+
+## Carry the studio voice into the work
+
+Read `docs/studio-voice.md` when coaching or drafting substantive copy. Meet the actual situation, listen before proposing, explain a choice through the concrete thing it changes, and let the learner respond to a draft. Keep Spanish, Catalan and English natural and equal in factual meaning. A direct answer can be enough; no compulsory quiz, framework, slang or motivational ending. Preserve the client's own approved language on customer pages, including exact terms and promises. Record corrections locally without turning one example into a rule for every business. Never claim to be Tan or invent a personal history with the reader.
