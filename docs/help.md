@@ -86,3 +86,10 @@ Tell the copilot what feels wrong in ordinary language: “It lost its warmth”
 With no photos, ask for a deliberate typographic design or a consistent original illustration family. Illustration must not pretend to show real staff, premises or past work. For a busy repair business, clarity can be the right personality; playfulness is not compulsory.
 
 If you dislike the revision, ask: “Keep what worked in the last version and change how we create the feeling.” The copilot should compare actual previews and restore the earlier version if necessary. It should not turn your feedback into a rule for every other client.
+
+
+## How do customers and AI search find the business?
+
+Use [prompt 09](../prompts/09-discovery.md). The copilot starts with the actual business model and existing profiles, fixes readable public content, then prepares the owner's next verification step. You do not need to understand structured data first. A service business without a customer-facing address needs different setup from a storefront. Website publication, Maps verification and indexing are separate results.
+
+For design, try the [color and type lab](studio-lab.html), then ask the copilot to adapt the relationship to the business. The lab is a fictional illustration of choices, not a finished customer site.

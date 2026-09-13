@@ -1,7 +1,7 @@
 ---
 title: What has actually been checked
-updated: 2026-09-11
-status: local-validation-v1.2
+updated: 2026-09-13
+status: local-validation-v1.3
 tags: [barcelona, validation]
 ---
 
@@ -60,3 +60,14 @@ Sites and Figma adapters are prepared; no Figma design file or ChatGPT Site was 
 - Source review included the sequence of design corrections, including the later requests to restore playfulness and improve shape coherence. Only abstracted principles are distributed. No private conversation, client photographs, reference artwork or personnel details were added.
 
 The stronger method remains a working hypothesis about better design practice. A real novice's first use, owner acceptance and actual visitor behavior are the next evidence. Earlier source commit `dc0dcab` preserves the previous starter for comparison/rollback; existing studio/client installations are not automatically overwritten.
+
+## Studio approach and discovery, version 1.3 — 13 September 2026
+
+- 37 Node tests pass locally. New coverage checks public structured metadata, escaped script content, service-area address omission from the graph, stale visible copy, canonical URLs, crawler rules and separate search/training policy. This is an output check, not a full robots parser conformance suite or a live crawler test.
+- Fresh installation and handoff tests include seven workspace skills and the complete canonical design and discovery methods in the three builder handoffs. All seven skills pass the official structural validator, using PyYAML in an isolated temporary environment; this supersedes the earlier validator limitation. Structural validity is not proof of coaching quality or registration in every application.
+- The interactive colour/type lab was checked in Chromium at 390, 768, 1024 and 1440px across its three business directions: 12 combinations without horizontal overflow. The desktop food composition and phone compositions for all three directions were visually inspected. The third-colour toggle and selected-button state work; keyboard focus is visible, and the default example remains readable with JavaScript disabled. An ornamental arrow was removed during review so the accent serves the composition rather than implying an action.
+- 138 relative Markdown file links were checked with no missing targets. This count covers the documentation, templates, prompts and skills reviewed in this revision; it is not an external-link or HTML-anchor audit.
+- The ordinary build, fictional demo, welcome library, package manifest, discovery check and generated handoffs run locally. The practice build correctly reports `draft-intentionally-noindex`. Live structured metadata is covered by synthetic, owner-approved test fixtures; no real client release was made.
+- Official Google, Bing, Apple, OpenAI, Schema.org and IndexNow guidance was reviewed for the dated discovery guide. Provider eligibility, private verification and account access still need checking for each real business. Local files cannot establish production HTTP behavior, indexing, AI citation, enquiries or bookings. No listing, indexing submission, DNS change or client outreach was performed for this starter revision.
+
+The creative director now carries a private client direction through revisions: two dominant colour roles with a supporting third, character and working typography, varied section jobs and a protected idea. The lab demonstrates this relationship with system fonts; it does not claim to implement a client's licensed font assets. Human language review, owner acceptance and a real novice's first use remain the next evidence. Commit `fcbe5c9` preserves version 1.2 for comparison and rollback. Existing installations are not silently overwritten.

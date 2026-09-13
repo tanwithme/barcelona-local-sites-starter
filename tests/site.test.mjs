@@ -278,3 +278,112 @@ test("each supplied sector remains buildable with the intended section order", a
       assert.ok(page.indexOf('id="services"') < page.indexOf('id="visit"'));
   }
 });
+
+// Metadata must describe the public page and remain safe inside an HTML script.
+import { businessGraph, auditDiscovery } from "../src/discovery.mjs";
+test("live discovery metadata shares identity, localized facts and public prices without leaking private fields", () => {
+  const b = live();
+  b.business.sector = "barber";
+  b.business.name = '</script><img src=x onerror="alert(1)">';
+  b.business.internalNote = "PRIVATE_NOTE";
+  b.review.internalNote = "PRIVATE_REVIEW";
+  b.catalog[0].priceEUR = 23;
+  b.review.approvedDigest = contentDigest(b);
+  const files = renderSite(b);
+  for (const lang of ["ca", "es", "en"]) {
+    const html = files.get(`${lang}/index.html`);
+    const raw = html.match(
+      /<script type="application\/ld\+json">([\s\S]*?)<\/script>/,
+    )[1];
+    assert.doesNotMatch(raw, /<|PRIVATE_NOTE|PRIVATE_REVIEW/);
+    const graph = JSON.parse(raw)["@graph"];
+    assert.equal(graph[0]["@id"], b.origin + "/#business");
+    assert.equal(graph[0].name, b.business.name);
+    assert.equal(graph[0].description, b.copy[lang].intro);
+    assert.equal(graph[0].address.streetAddress, b.business.address);
+    assert.equal(graph[1].offers.price, 23);
+    assert.equal(graph[2].offers, undefined);
+    assert.ok(
+      html.includes(`property="og:url" content="${b.origin}/${lang}/"`),
+    );
+  }
+  assert.equal(auditDiscovery(b, files).passed, true);
+});
+test("service-area graph omits operating addresses and restaurant categories are not invented services", () => {
+  const b = live();
+  b.business.visitMode = "service-area";
+  b.business.address = "Private operating address";
+  const graph = businessGraph(b, "es")["@graph"];
+  assert.equal(graph[0]["@type"], "Organization");
+  assert.equal(graph[0].address, undefined);
+  assert.doesNotMatch(JSON.stringify(graph), /Private operating address/);
+  assert.equal(graph.length, 1);
+  b.status = "draft";
+  assert.equal(businessGraph(b, "es"), null);
+});
+test("discovery audit separates intentionally blocked drafts from live technical checks and catches broken output", () => {
+  const draftFiles = renderSite(seed);
+  assert.equal(
+    auditDiscovery(seed, draftFiles).state,
+    "draft-intentionally-noindex",
+  );
+  draftFiles.set(
+    "es/index.html",
+    draftFiles
+      .get("es/index.html")
+      .replace(seed.copy.es.headline, "Outdated heading"),
+  );
+  assert.equal(auditDiscovery(seed, draftFiles).passed, false);
+  const b = live(),
+    files = renderSite(b);
+  assert.equal(auditDiscovery(b, files).state, "local-technical-checks-pass");
+  const staleBody = new Map(files);
+  staleBody.set(
+    "es/index.html",
+    files
+      .get("es/index.html")
+      .replace(
+        /(<body\b[^>]*>)([\s\S]*?)(<\/body>)/,
+        (_, start, body, end) =>
+          start + body.replace(b.copy.es.intro, "Outdated introduction") + end,
+      ),
+  );
+  assert.equal(auditDiscovery(b, staleBody).passed, false);
+  files.set(
+    "en/index.html",
+    files.get("en/index.html").replace('rel="canonical"', 'rel="wrong"'),
+  );
+  files.set("robots.txt", "User-agent: *\nDisallow: /\n");
+  const result = auditDiscovery(b, files);
+  assert.equal(result.passed, false);
+  assert.ok(
+    result.checks.some(
+      (c) => c.check === "en: canonical" && c.result === "fail",
+    ),
+  );
+  assert.ok(
+    result.checks.some(
+      (c) => c.check === "crawler policy" && c.result === "fail",
+    ),
+  );
+  assert.match(result.limits, /not checked/);
+});
+
+test("discovery respects separate training policy and detects a search-bot-specific block", () => {
+  const b = live(),
+    files = renderSite(b);
+  const publicPolicy = files.get("robots.txt");
+  files.set("robots.txt", publicPolicy + "\nUser-agent: GPTBot\nDisallow: /\n");
+  assert.equal(auditDiscovery(b, files).passed, true);
+  files.set(
+    "robots.txt",
+    publicPolicy + "\nUser-agent: OAI-SearchBot\nDisallow: /en/\n",
+  );
+  assert.equal(auditDiscovery(b, files).passed, false);
+  files.set(
+    "robots.txt",
+    publicPolicy +
+      "\nUser-agent: OAI-SearchBot\nDisallow: /en/\nAllow: /en/$\n",
+  );
+  assert.equal(auditDiscovery(b, files).passed, true);
+});

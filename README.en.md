@@ -14,7 +14,7 @@ In **Codex** or **ChatGPT Work on desktop with local-file access**, paste this:
 Set up https://github.com/tanwithme/barcelona-local-sites-starter on my Desktop. Read INSTALL.md and carry out the setup. I'm a beginner: open the project, load AGENTS.md and its skills, check the demo and be my copilot for offering websites to Barcelona businesses. Help me one step at a time, save our progress and prepare complete Figma Make prompts when needed. Don't publish, buy anything or contact anyone during setup.
 ```
 
-The assistant prepares **Barcelona Sites Studio** with instructions, six skills, a demo, Figma Make prompts, progress notes and separate client projects. Then it starts your first practice with you. You do not install each skill individually.
+The assistant prepares **Barcelona Sites Studio** with instructions, seven skills, a demo, Figma Make prompts, progress notes and separate client projects. Then it starts your first practice with you. You do not install each skill individually.
 
 You may need to grant access to a folder or select the installed project in the app. If the chat lacks local access, it should guide you into Work/Codex. If this repository is private, you need GitHub access or a ZIP shared by its owner. [What setup does](INSTALL.md)
 
@@ -30,7 +30,7 @@ You may need to grant access to a folder or select the installed project in the 
 - [Barcelona requirements](docs/barcelona-requirements.md), [business-site research](docs/research-barcelona.md) and [design system](docs/design-system.md).
 - [Sites and Figma](docs/sites-and-figma.md): prepare prompts or execute only through tools actually available.
 
-Includes six original agent skills, three fictional examples and a static generator without external dependencies. Generated sites work without JavaScript and have complete Catalan, Spanish and English journeys. Example copy has AI review; real content needs competent human language review before publication.
+Includes seven original agent skills, three fictional examples and a static generator without external dependencies. Generated sites work without JavaScript and have complete Catalan, Spanish and English journeys. Example copy has AI review; real content needs competent human language review before publication.
 
 ## With a coding assistant
 
@@ -53,3 +53,9 @@ The optional, visible lowercase `tanwithme` marker declares the starter's proven
 ## Design with character
 
 The copilot protects the business idea, chooses a coherent direction and reviews the actual website. Learn one decision at a time. [Design method](docs/designer-playbook.md) · [Three worked directions](docs/design-worlds.md) · [What changed](docs/design-learning-audit.md). The detailed references are in English; the copilot explains and applies them in your chosen language.
+
+## The tanwithme studio approach
+
+Two dominant colors and a supporting third; characterful display type and readable practical text; coherent sections with different rhythms. The copilot also prepares local listings and checks search and agent readability, without promising rankings.
+
+[Creative direction](docs/designer-playbook.md) · [Color and type lab](docs/studio-lab.html) · [Local discovery](docs/local-discovery.md) · [Discovery prompt](prompts/09-discovery.md).

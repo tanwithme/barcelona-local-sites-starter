@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <link rel="icon" href="data:," />
+    <title>Color y voz — tanwithme studio</title>
+    <style>
+      :root {
+        --paper: #f7f3e9;
+        --ink: #252522;
+        --quiet: #605b53;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        background: var(--paper);
+        color: var(--ink);
+        font:
+          17px/1.55 system-ui,
+          sans-serif;
+      }
+      a {
+        color: inherit;
+        text-underline-offset: 0.2em;
+      }
+      header,
+      main,
+      footer {
+        max-width: 1240px;
+        margin: auto;
+        padding: 2rem clamp(1.2rem, 5vw, 4rem);
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        flex-wrap: wrap;
+        border-bottom: 1px solid #b8b1a4;
+      }
+      header strong {
+        font-size: 1rem;
+      }
+      h1 {
+        font:
+          500 clamp(2.8rem, 7vw, 6rem)/1.02 Georgia,
+          serif;
+        letter-spacing: -0.055em;
+        max-width: 13ch;
+        margin: 2rem 0;
+      }
+      h2 {
+        line-height: 1.1;
+      }
+      p {
+        max-width: 65ch;
+      }
+      small,
+      .note {
+        font-size: 0.9rem;
+        color: var(--quiet);
+      }
+      .controls {
+        display: flex;
+        gap: 0.8rem;
+        flex-wrap: wrap;
+        margin: 2rem 0 1rem;
+      }
+      button {
+        font: inherit;
+        min-height: 48px;
+        padding: 0.65rem 1rem;
+        border: 1px solid currentColor;
+        border-radius: 0;
+        background: transparent;
+        color: inherit;
+        cursor: pointer;
+      }
+      button[aria-pressed="true"] {
+        background: var(--ink);
+        color: var(--paper);
+      }
+      :focus-visible {
+        outline: 3px solid #0064ba;
+        outline-offset: 5px;
+      }
+      .stage {
+        --a: #492237;
+        --b: #fff0bc;
+        --c: #d4482f;
+        background: var(--b);
+        color: var(--a);
+        margin: 2.5rem 0;
+        border-radius: 0 0 5rem 0;
+        overflow-wrap: anywhere;
+      }
+      .stage[data-world="barber"] {
+        --a: #421d2b;
+        --b: #f7efe1;
+        --c: #b6d6c2;
+        border-radius: 0;
+      }
+      .stage[data-world="trades"] {
+        --a: #18362d;
+        --b: #edf3eb;
+        --c: #bd5b34;
+        border-radius: 0 2.5rem 0 0;
+      }
+      .stage-top {
+        padding: 1.5rem 2rem;
+        border-bottom: 1px solid currentColor;
+        display: flex;
+        justify-content: space-between;
+        gap: 1rem;
+        flex-wrap: wrap;
+        font-size: 0.9rem;
+      }
+      .scene {
+        padding: clamp(1.5rem, 5vw, 4rem);
+        display: grid;
+        grid-template-columns: 1.25fr 1fr;
+        gap: 3rem;
+        align-items: center;
+      }
+      .scene h2 {
+        font:
+          500 clamp(2.7rem, 5vw, 4.9rem)/1.02 Georgia,
+          serif;
+        letter-spacing: -0.045em;
+        margin: 0 0 1.5rem;
+      }
+      .stage[data-world="barber"] .scene {
+        grid-template-columns: 1fr;
+      }
+      .stage[data-world="barber"] .scene h2 {
+        font-family: system-ui, sans-serif;
+        font-weight: 850;
+        max-width: 14ch;
+      }
+      .stage[data-world="barber"] .scene aside {
+        max-width: 38rem;
+        margin-left: auto;
+      }
+      .stage[data-world="trades"] .scene h2 {
+        font-family: system-ui, sans-serif;
+        font-weight: 650;
+        font-size: clamp(2.4rem, 4vw, 4rem);
+      }
+      .gesture {
+        padding: 2rem;
+        background: var(--a);
+        color: var(--b);
+        border-radius: 48% 48% 42% 42% / 25% 25% 30% 30%;
+        border-top: 8px solid var(--c);
+        text-align: center;
+        font:
+          italic 2rem/1.25 Georgia,
+          serif;
+      }
+      .stage[data-world="barber"] .gesture {
+        border-radius: 0;
+        text-align: left;
+        font: 750 2rem/1.2 system-ui;
+        padding: 1rem 0;
+        border-top: 6px solid var(--c);
+        background: transparent;
+        color: var(--a);
+      }
+      .stage[data-world="trades"] .gesture {
+        border-radius: 0;
+        padding: 1.5rem;
+        text-align: left;
+        font: 650 1.4rem/1.35 system-ui;
+      }
+      .stage[data-quiet="true"] {
+        --c: var(--a);
+      }
+      .swatches {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        border-top: 1px solid currentColor;
+      }
+      .swatches div {
+        padding: 1.2rem;
+      }
+      .swatch {
+        display: block;
+        height: 1rem;
+        margin-bottom: 0.7rem;
+        border: 1px solid currentColor;
+      }
+      .a {
+        background: var(--a);
+      }
+      .b {
+        background: var(--b);
+      }
+      .c {
+        background: var(--c);
+      }
+      .lesson {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+        padding-top: 1rem;
+      }
+      .lesson h3 {
+        font-size: 1.05rem;
+        margin: 0.3rem 0;
+      }
+      .specimen {
+        border-top: 1px solid #b8b1a4;
+        padding: 1.5rem 0;
+        margin-top: 2rem;
+      }
+      .specimen p {
+        font-size: 1rem;
+      }
+      .status {
+        min-height: 3rem;
+      }
+      .stage .sample-note {
+        padding: 0 2rem 1.5rem;
+        font-size: 0.85rem;
+      }
+      .nojs {
+        font-size: 0.9rem;
+      }
+      @media (max-width: 760px) {
+        .scene,
+        .lesson {
+          grid-template-columns: 1fr;
+          gap: 1.5rem;
+        }
+        .swatches {
+          grid-template-columns: 1fr;
+        }
+        .swatches div {
+          padding: 0.6rem 1.5rem;
+        }
+        .scene h2 {
+          font-size: 2.8rem;
+        }
+        .stage[data-world="barber"] .scene aside {
+          margin: 0;
+        }
+        header,
+        main,
+        footer {
+          padding-top: 1.3rem;
+          padding-bottom: 1.3rem;
+        }
+      }
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          scroll-behavior: auto !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <strong>tanwithme studio</strong
+      ><a href="../START%20HERE.html">Volver al pack</a>
+    </header>
+    <main>
+      <p>UN LABORATORIO DE DIRECCIÓN CREATIVA</p>
+      <h1>Dos colores.<br />Una tercera intención.</h1>
+      <p>
+        Elige una situación y observa qué cambia: el ritmo, la voz y la forma.
+        Los colores principales sostienen el mundo. El tercero tiene un trabajo
+        concreto.
+      </p>
+      <div class="controls" role="group" aria-label="Dirección de ejemplo">
+        <button type="button" data-pick="food" aria-pressed="true">
+          Una mesa</button
+        ><button type="button" data-pick="barber" aria-pressed="false">
+          Un corte</button
+        ><button type="button" data-pick="trades" aria-pressed="false">
+          Una reparación
+        </button>
+      </div>
+      <button type="button" id="quiet" aria-pressed="false">
+        Ver sin el tercer color
+      </button>
+      <p class="note">
+        Prueba de jerarquía: el mensaje debe seguir funcionando. No es una
+        certificación de contraste.
+      </p>
+      <noscript
+        ><p class="nojs">
+          Sin JavaScript puedes leer el ejemplo de la mesa y el método completo
+          enlazado abajo.
+        </p></noscript
+      >
+      <section
+        class="stage"
+        id="stage"
+        data-world="food"
+        aria-label="Composición ficticia"
+      >
+        <div class="stage-top">
+          <strong id="name">UNA MESA COMPARTIDA</strong
+          ><span>Ejercicio ficticio. Sin reservas ni ventas.</span>
+        </div>
+        <div class="scene">
+          <div>
+            <h2 id="headline">Hay sitio para un buen rato.</h2>
+            <p id="bodycopy">
+              Una invitación cálida abre la página. Los detalles de la comida y
+              la visita llegan con una voz más tranquila.
+            </p>
+          </div>
+          <aside>
+            <div class="gesture">
+              <span id="gesture">Algo que poner en medio.</span>
+            </div>
+          </aside>
+        </div>
+        <div class="swatches">
+          <div>
+            <span class="swatch a"></span><strong>A — identidad</strong
+            ><br /><span id="roleA">Ciruela: texto y gesto principal.</span>
+          </div>
+          <div>
+            <span class="swatch b"></span><strong>B — espacio</strong
+            ><br /><span id="roleB">Crema: calidez y descanso.</span>
+          </div>
+          <div>
+            <span class="swatch c"></span><strong>C — apoyo</strong><br /><span
+              id="roleC"
+              >Tomate: un borde que recoge el gesto.</span
+            >
+          </div>
+        </div>
+        <p class="sample-note">
+          Formas y colores ilustrativos. Adáptalos a los hechos, materiales y
+          personalidad del negocio.
+        </p>
+      </section>
+      <div class="lesson">
+        <div>
+          <h3>Una voz con carácter</h3>
+          <p id="typeDisplay">
+            Una serif expresiva abre espacio para la hospitalidad. Aquí se usa
+            Georgia, disponible en muchos sistemas.
+          </p>
+        </div>
+        <div>
+          <h3>Una voz que ayuda</h3>
+          <p id="typeBody">
+            La letra de sistema deja leer los detalles con facilidad. La versión
+            final debe comprobar la tipografía y sus alternativas en los
+            dispositivos reales.
+          </p>
+        </div>
+      </div>
+      <div class="specimen">
+        <h3>La prueba también habla tres idiomas</h3>
+        <p lang="ca">
+          Col·laboració · informació · preu a consultar · Demana cita
+        </p>
+        <p lang="es">Información · precio a consultar · Pide cita</p>
+        <p lang="en">
+          Information · ask for the price · Ask for an appointment
+        </p>
+        <p class="note">
+          Prueba acentos, palabras largas, cifras y botones. La puntuación útil
+          y el punt volat no son decoración que deba borrarse.
+        </p>
+      </div>
+      <p id="explanation" class="status" aria-live="polite">
+        La mesa: una forma amplia reúne el gesto; la información práctica
+        permanece abierta y legible.
+      </p>
+      <p>
+        <a href="designer-playbook.md">Leer el enfoque creativo</a> ·
+        <a href="../templates/creative-direction.md"
+          >Guardar la dirección del cliente</a
+        >
+        · <a href="local-discovery.md">Ayudar a que lo encuentren</a>
+      </p>
+    </main>
+    <footer>
+      <p class="note">
+        Material de aprendizaje en español. Pide al copilot que lo explique en
+        catalán o inglés. No incluye fuentes descargadas, fotos de negocios
+        reales ni seguimiento de visitantes.
+      </p>
+    </footer>
+    <script>
+      const examples = {
+        food: {
+          name: "UNA MESA COMPARTIDA",
+          headline: "Hay sitio para un buen rato.",
+          bodycopy:
+            "Una invitación cálida abre la página. Los detalles de la comida y la visita llegan con una voz más tranquila.",
+          gesture: "Algo que poner en medio.",
+          roleA: "Ciruela: texto y gesto principal.",
+          roleB: "Crema: calidez y descanso.",
+          roleC: "Tomate: un borde que recoge el gesto.",
+          typeDisplay:
+            "Una serif expresiva abre espacio para la hospitalidad. Aquí se usa Georgia, disponible en muchos sistemas.",
+          explanation:
+            "La mesa: una forma amplia reúne el gesto; la información práctica permanece abierta y legible.",
+        },
+        barber: {
+          name: "TIEMPO PARA TU CORTE",
+          headline: "Un corte que vaya contigo.",
+          bodycopy:
+            "La tipografía abre con seguridad. Los servicios necesitan espacio y diferencias claras para poder compararlos.",
+          gesture: "Precisión. Sin prisas.",
+          roleA: "Oxblood: identidad y contraste.",
+          roleB: "Papel cálido: espacio para leer.",
+          roleC: "Menta: una línea que señala el detalle.",
+          typeDisplay:
+            "Una sans contundente lleva la idea. La misma familia, con otro peso y escala, resuelve los detalles.",
+          explanation:
+            "El corte: cambia la composición, no solo el color. La forma recta expresa precisión y el titular tiene más espacio.",
+        },
+        trades: {
+          name: "UN PROBLEMA CONCRETO",
+          headline: "Cuéntanos qué pasa.",
+          bodycopy:
+            "Primero, entender qué se puede resolver y dónde. La claridad también puede ser una forma de personalidad.",
+          gesture: "Zona, servicio y siguiente paso.",
+          roleA: "Verde tinta: lectura y confianza.",
+          roleB: "Papel claro: poco ruido.",
+          roleC: "Cobre: orientación puntual.",
+          typeDisplay:
+            "Una sans firme y abierta mantiene la pregunta directa. Los adornos ceden espacio a la información práctica.",
+          explanation:
+            "La reparación: una apertura más compacta y un panel preciso ayudan a encontrar la información sin retrasos.",
+        },
+      };
+      const stage = document.getElementById("stage");
+      for (const button of document.querySelectorAll("[data-pick]"))
+        button.addEventListener("click", () => {
+          stage.dataset.world = button.dataset.pick;
+          for (const [id, value] of Object.entries(
+            examples[button.dataset.pick],
+          ))
+            document.getElementById(id).textContent = value;
+          for (const b of document.querySelectorAll("[data-pick]"))
+            b.setAttribute("aria-pressed", String(b === button));
+        });
+      document.getElementById("quiet").addEventListener("click", function () {
+        const active = this.getAttribute("aria-pressed") !== "true";
+        this.setAttribute("aria-pressed", String(active));
+        stage.dataset.quiet = String(active);
+        this.textContent = active
+          ? "Restaurar el tercer color"
+          : "Ver sin el tercer color";
+      });
+    </script>
+  </body>
+</html>

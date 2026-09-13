@@ -14,7 +14,7 @@ A **Codex** o **ChatGPT Work d'escriptori amb accés als fitxers locals**, engan
 Configura https://github.com/tanwithme/barcelona-local-sites-starter al meu Escriptori. Llegeix INSTALL.md i fes la configuració. Soc principiant: obre el projecte, carrega AGENTS.md i les skills, comprova la demo i acompanya'm com a copilot per oferir webs a negocis de Barcelona. Ajuda'm pas a pas, desa el nostre progrés i prepara prompts complets per a Figma Make quan els necessiti. No publiquis, compris ni contactis amb ningú durant la configuració.
 ```
 
-L'assistent prepara **Barcelona Sites Studio** amb instruccions, sis skills, una demo, prompts per a Figma Make, notes de progrés i projectes separats per a cada client. Després comença amb tu una primera pràctica. No cal instal·lar les skills una per una.
+L'assistent prepara **Barcelona Sites Studio** amb instruccions, set skills, una demo, prompts per a Figma Make, notes de progrés i projectes separats per a cada client. Després comença amb tu una primera pràctica. No cal instal·lar les skills una per una.
 
 Pot caldre autoritzar una carpeta o seleccionar el projecte a l'app. Si el xat no té accés local, t'indicarà com continuar a Work/Codex. Si el repositori és privat, cal accés de GitHub o el ZIP compartit pel propietari. [Què fa la configuració](INSTALL.md)
 
@@ -25,12 +25,12 @@ Pot caldre autoritzar una carpeta o seleccionar el projecte a l'app. Si el xat n
 ## Tria el pas que necessites
 
 - [Camí d'aprenentatge en català](docs/learning-path.md#català): pràctica → conversa amb el negoci → esborrany → revisió → lliurament.
-- [Ajuda](docs/help.md) i [8 prompts](prompts/): demana que te'ls expliquin o adaptin en català.
+- [Ajuda](docs/help.md) i [9 prompts](prompts/): demana que te'ls expliquin o adaptin en català.
 - [Abast i preu](docs/scope-and-pricing.md), [fitxa del negoci](templates/client-intake.md) i [revisió](templates/release-record.md).
 - [Requisits de Barcelona](docs/barcelona-requirements.md), [recerca de referents](docs/research-barcelona.md) i [sistema de disseny](docs/design-system.md).
 - [Sites i Figma](docs/sites-and-figma.md): què pots preparar i què depèn de l'accés real.
 
-Inclou sis habilitats originals per a agents i tres exemples ficticis. Els webs generats funcionen sense JavaScript i tenen recorreguts en català, castellà i anglès. Els textos d'exemple són esborranys revisats per IA; cal revisió humana competent del contingut real abans de publicar-lo.
+Inclou set habilitats originals per a agents i tres exemples ficticis. Els webs generats funcionen sense JavaScript i tenen recorreguts en català, castellà i anglès. Els textos d'exemple són esborranys revisats per IA; cal revisió humana competent del contingut real abans de publicar-lo.
 
 ## Per a un assistent de programació
 
@@ -53,3 +53,9 @@ La marca opcional i visible `tanwithme` declara la procedència del pack. No rec
 ## Dissenyar amb caràcter
 
 El copilot preserva la idea del negoci, tria una direcció coherent i revisa el web real. Aprèn una decisió cada vegada. [Design method](docs/designer-playbook.md) · [Three worked directions](docs/design-worlds.md) · [What changed](docs/design-learning-audit.md). The detailed references are in English; the copilot explains and applies them in your chosen language.
+
+## L’enfocament tanwithme studio
+
+Dos colors principals i un tercer de suport; tipografia amb caràcter i lectura fàcil; seccions coherents amb ritmes diferents. El copilot també prepara fitxes locals i revisa la cerca i la lectura per agents, sense prometre posicions.
+
+[Creative direction](docs/designer-playbook.md) · [Color and type lab](docs/studio-lab.html) · [Local discovery](docs/local-discovery.md) · [Discovery prompt](prompts/09-discovery.md).

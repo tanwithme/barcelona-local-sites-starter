@@ -13,6 +13,8 @@ import { createHash } from "node:crypto";
 import { isIP } from "node:net";
 import { createProvenance } from "../tools/provenance.mjs";
 
+import { discoveryHead } from "./discovery.mjs";
+
 export const LANGUAGES = ["ca", "es", "en"];
 const labels = {
   ca: {
@@ -424,7 +426,7 @@ function head(brief, lang, title, description, route = "index.html") {
         ? `<link rel="alternate" hreflang="x-default" href="${h(root + "/")}">`
         : "")
     : "";
-  return `<!doctype html><html lang="${lang}" data-sector="${brief.business.sector}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light"><link rel="icon" href="data:,"><title>${h(title)}</title><meta name="description" content="${h(description)}"><meta name="robots" content="${live ? "index,follow" : "noindex,nofollow"}">${root ? `<link rel="canonical" href="${h(root + "/" + lang + "/" + (route === "index.html" ? "" : route))}">` : ""}${alternate}${brief.provenance.enabled ? '<meta name="generator" content="tanwithme"><link rel="alternate" type="application/json" href="../.well-known/tanwithme.json" title="Site provenance">' : ""}<link rel="stylesheet" href="../assets/site.css"></head>`;
+  return `<!doctype html><html lang="${lang}" data-sector="${brief.business.sector}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="color-scheme" content="light"><link rel="icon" href="data:,"><title>${h(title)}</title><meta name="description" content="${h(description)}"><meta name="robots" content="${live ? "index,follow" : "noindex,nofollow"}">${root ? `<link rel="canonical" href="${h(root + "/" + lang + "/" + (route === "index.html" ? "" : route))}">` : ""}${alternate}${discoveryHead(brief, lang, title, description, route, h)}${brief.provenance.enabled ? '<meta name="generator" content="tanwithme"><link rel="alternate" type="application/json" href="../.well-known/tanwithme.json" title="Site provenance">' : ""}<link rel="stylesheet" href="../assets/site.css"></head>`;
 }
 function header(brief, lang, route = "index.html") {
   const h = escapeHtml;

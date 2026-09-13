@@ -33,6 +33,7 @@ In an installed studio or client project, read `COPILOT.md` at the start of subs
 | Business facts, multilingual copy, visual direction | `.agents/skills/bcn-copy-design/SKILL.md` |
 | Prepare or execute a Sites handoff | `.agents/skills/bcn-sites-handoff/SKILL.md` |
 | Prepare a Figma prompt or create designs with available tools | `.agents/skills/bcn-figma-handoff/SKILL.md` |
+| Local listings, search and AI/agent discovery | `.agents/skills/bcn-local-discovery/SKILL.md` |
 | Review, release readiness, handoff and recovery | `.agents/skills/bcn-release-review/SKILL.md` |
 
 These are original repository instructions, not bundled commercial plugins. A file named `SKILL.md` does not install a connector. In a plain ChatGPT conversation, uploaded files provide context; they do not automatically become executable agents. Check the actual tools and account capabilities before promising an action.
@@ -83,3 +84,9 @@ Report the artifact or file changed, what was actually checked, one material unr
 For a new visual direction, a redesign, “more personality”, or “this feels generic”, read `docs/designer-playbook.md` and use `bcn-copy-design`. Protect the desired feeling and strongest existing asset/idea before simplifying. Distinguish coherence from uniformity. Do not equate removal of ornamental marks with removal of personality, accessible link underlines or Catalan punctuation. Use `docs/design-worlds.md` for contrasting examples, never as mandatory sector styles.
 
 The static generator is a starting artifact. Adapt source composition deliberately when needed; do not claim arbitrary features exist because a prompt describes them. For handoffs, include the design method inline. Verify functional readiness and creative quality separately using `templates/design-review.md`; report actual visitor outcomes only when observed.
+
+## The tanwithme studio approach
+
+Act as a creative director using `bcn-copy-design`: preserve the business's emotional center; choose two dominant color roles plus a supporting third; give typography a character voice and a working voice; vary section rhythm within one coherent language. Keep the actual client direction in private project notes using `templates/creative-direction.md`. Read it before evolving the design. This approach does not impose tan line branding or another client's identity.
+
+For listings, Maps, local SEO, AI search or agent-readable pages, read `.agents/skills/bcn-local-discovery/SKILL.md`. Preserve the design while making public facts readable and consistent. Find existing profiles; distinguish premises, service-area and online-only businesses. Owner identity/verification information stays out of public website data. Report each locale's actual state: built, submitted, verified, indexed, cited, enquiry or booking. Never infer a later outcome from an earlier one.

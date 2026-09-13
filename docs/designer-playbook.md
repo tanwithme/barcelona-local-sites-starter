@@ -1,11 +1,11 @@
 ---
-title: Design a world that belongs to this business
-updated: 2026-09-11
+title: The tanwithme studio design approach
+updated: 2026-09-13
 status: working-principles
 tags: [design, learning, first-principles]
 ---
 
-# Design a world that belongs to this business
+# The tanwithme studio design approach
 
 This is a working method, not a house style. Use it to build the actual website. Explain only the decisions the learner needs now, in Catalan, Spanish or English. A beginner does not need to fill out a strategy workbook before receiving help.
 
@@ -28,6 +28,28 @@ Keep a small common grammar: type hierarchy, color roles, shape family, image tr
 Start with two dominant colors and one supporting accent when it helps focus the design. This is a useful constraint, not a universal law. Functional focus/error colors and readable contrast take precedence. Sector palettes supplied by the starter are fallback examples, not client identity; keep them only when they fit. If changing palette, update CSS and exported tokens together.
 
 Define shapes as a family with roles: for example a wide serving-oval for an illustration, a shallow curved section edge for a welcome, and a simple pill for an action. Repeat the relationship, not the exact silhouette. Use a few deliberate contours, generous internal space and responsive variants. Random blobs, huge border radii on every card, tilted text and a different motif in every section do not create a world. Keep text and focus outlines outside decorative clipping; do not distort photographs or hit targets.
+
+## Creative direction: two main colors, then a third
+
+Use two dominant brand colors as the default studio starting point: one establishes the ground, the other carries identity and readable foreground. Let those two trade roles in selected sections when contrast works. Give the third color one supporting job—an action, a food illustration detail, a selected state or a small moment of surprise. It should not become a third equal background everywhere. Supporting neutrals, photographs and necessary accessible state colors are not a reason to make the whole site monochrome or unsafe. Existing client identity can justify a different approach; record why.
+
+Choose values from the business's materials and emotional intent. Cream/plum/tomato in a food project is one expression of the relationship, not a studio palette to copy into every client. A workshop could use chalk/ink/copper; a barber could use warm paper/oxblood/a small mint note. These are directions to test, not ready-certified contrast pairs. Put actual colors in the direction and check each text, action, hover and focus pairing. The third color must also work when absent: hierarchy and state need other cues.
+
+Give typography two jobs. **The character voice** carries a headline, a name or one expressive phrase. **The working voice** carries practical copy, menus, prices, forms and navigation. A single versatile family can do both through weight and scale; two compatible families can create useful contrast. A third typeface rarely earns its maintenance. Do not use a decorative font to make basic information harder to read.
+
+A source project used Bricolage Grotesque for character and Instrument Sans for practical text. Abstract the relationship: a warm, distinctive headline and a calm, open working face. Do not make that exact pairing mandatory. Editorial warmth may suit an expressive serif with a restrained sans; a precise trade may suit a humanist or sturdy sans with a clear numeral system. Choose from actual licensed assets, not a memorized list of fashionable fonts. The portable examples intentionally use installed system fonts; naming a font in a prompt does not install or serve it.
+
+Inspect a specimen with the actual business name, short/long headline, service description, euro price, navigation and longest CTA in all three languages. Test accents, ç, apostrophes and col·laboració; also I/l/1 and price numerals. Check weight, line-height, line endings and fallback wrapping. Prefer locally served licensed WOFF2 with only needed glyphs/weights, preserving Catalan and Spanish; use font-display and sensible fallback metrics. Never subset away required characters or rely on a remote font loading to keep the layout usable. Recheck layout when fonts load and when they fail. [MDN web fonts](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Text_styling/Web_fonts).
+
+## The copilot acts as a creative director
+
+Translate “more personality” into an observed weakness before adding effects. Is the issue a weak headline, interchangeable structure, equal emphasis, a disconnected shape family or a lost human cue? Keep one main novelty axis per pass. Give the other elements supporting jobs. A warm surface with precise information is a useful tension; “modern but premium” does not decide anything.
+
+Record the actual client direction using the creative-direction template in its `private/creative-direction.md`. Read it before the next substantive design change. Carry a public-safe summary into a Make/Sites prompt, including chosen colors/fonts, section jobs and protected idea; do not overwrite it with fallback sector tokens. A shared system can repeat actions and accessibility behavior while the sections change scale, density and shape.
+
+Use three passes without requiring the novice to run a course: **direct** (one grounded concept), **compose** (build the whole reading rhythm), **edit** (remove competing emphasis and preserve the strongest gesture). Show a real before/after when an artifact exists. Test the five-second read, full-page rhythm, grayscale hierarchy, mobile order and practical action. Mechanical checks can flag repetition; only context can decide whether that repetition belongs.
+
+Search work must not erase the visual idea. Put accurate services, area and enquiry expectations into meaningful visible copy and readable HTML; do not stuff city keywords into every heading or manufacture an FAQ wall. The local discovery skill handles provider work separately.
 
 ## 4. Personality must do a job
 

@@ -32,7 +32,7 @@ async function fixture(dir) {
   }
   return root;
 }
-test("fresh desktop-style setup produces a usable studio with all six skills and Make prompt", async () => {
+test("fresh desktop-style setup produces a usable studio with all seven skills and Make prompt", async () => {
   const dir = await temp();
   try {
     const target = path.join(dir, "Desktop", "Barcelona Sites Studio");
@@ -42,7 +42,7 @@ test("fresh desktop-style setup produces a usable studio with all six skills and
     assert.equal(doctor.ready, true);
     assert.equal(
       doctor.checks.filter((c) => c.file.includes("/SKILL.md")).length,
-      6,
+      7,
     );
     assert.match(
       await readFile(path.join(target, "COPILOT.md"), "utf8"),

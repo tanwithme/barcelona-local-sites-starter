@@ -32,3 +32,5 @@ Call the outcome by its observed state: locally checked, published, owner accept
 ## Review the design as well as the build
 
 Use `templates/design-review.md` and the critique in `docs/designer-playbook.md`. Inspect the whole page, not only overflow or the hero. Check whether cleanup preserved the intended feeling, section differences share a grammar, shapes have deliberate roles and the business remains recognizable. Do not report model critique as audience evidence. A design issue is not automatically a release blocker; distinguish owner-requested creative changes from broken actions, missing facts or inaccessible content.
+
+For local discovery readiness, run `npm run check:discovery` on the current build and use `templates/discovery-review.md`. A technical pass is not a live fetch, indexed page or verified listing. Inspect service-area address visibility in both page content and metadata, and keep the creative direction intact after SEO changes.

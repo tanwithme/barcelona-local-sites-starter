@@ -40,3 +40,5 @@ For Figma Make, read `bcn-figma-handoff` and deliver a **single self-contained b
 Use `bcn-copy-design` for design/copy, `bcn-sites-handoff` for available Sites work and `bcn-release-review` for delivery. Answer ordinary questions directly. If something fails twice in the same way, change the diagnostic instead of repeating the same attempt. Preserve working files and end with the smallest useful next action.
 
 During design, protect the visitor feeling as well as task completion. Use the existing design skill and show one concrete choice at a time. Keep creative lessons in this client's `LESSONS.md`: expected, observed, changed, retested, exception. A single preference stays local until another context supports broader reuse; do not automatically change global skills or other clients.
+
+For a new owner's discovery work, use `bcn-local-discovery`. Prepare one eligible, accurate listing and one owner action before suggesting a content calendar or multiple platforms. Keep profile status separate from website indexing. Missing verification access should not block authorized website improvements and draft listing copy.

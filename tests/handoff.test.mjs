@@ -86,6 +86,11 @@ test("all builder handoffs include the canonical design method and remain privat
     ]) {
       const prompt = await readFile(path.join(out, name), "utf8");
       assert.ok(prompt.includes(method), name + " omitted the actual method");
+      assert.ok(
+        prompt.includes(
+          await readFile(path.join(root, "docs/local-discovery.md"), "utf8"),
+        ),
+      );
       assert.ok(prompt.includes(seed.copy.ca.headline));
       assert.ok(prompt.includes(seed.copy.es.headline));
       assert.ok(prompt.includes(seed.copy.en.headline));

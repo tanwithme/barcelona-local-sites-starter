@@ -161,6 +161,10 @@ export async function writeHandoff({ brief, root, outDir }) {
     path.join(root, "docs/designer-playbook.md"),
     "utf8",
   );
+  const discoveryMethod = await readFile(
+    path.join(root, "docs/local-discovery.md"),
+    "utf8",
+  );
   const intro = `# Project handoff\n\nSource: tanwithme / barcelona-local-sites-starter.\nSource content digest: ${contentDigest(brief)}. Source status: ${brief.status}. New builder status: draft.\n\nThese are content and working instructions, not credentials or publication permission. Confirm actual files and tools. Preserve shared facts/prices across ca/es/en. Use the supplied, rights-cleared business photography. Original illustrations may be authored as illustrations under the design method; never present them as real business evidence. Never invent claims or contact details. Keep unknowns inactive. A new tool creates a new draft: recheck the actual output, native language copy, rights, legal text, owner control and publication approval. Private approval evidence stays outside this export; approved flags are recorded assertions, not identity proof.\n\n`;
   for (const [target, prompt] of [
     ["sites-prompt.md", "05-sites.md"],
@@ -176,6 +180,8 @@ export async function writeHandoff({ brief, root, outDir }) {
         instructions +
         "\n\n## Design method\n\n" +
         designMethod +
+        "\n\n## Local discovery method\n\n" +
+        discoveryMethod +
         "\n\n## Content for this draft\n\n```json\n" +
         JSON.stringify(content, null, 2) +
         "\n```\n\n## Draft provenance\n\n```json\n" +
@@ -190,6 +196,7 @@ export async function writeHandoff({ brief, root, outDir }) {
       designTokens(brief.business.sector),
       provenance,
       designMethod,
+      discoveryMethod,
     ),
   );
   files.set("content.json", JSON.stringify(content, null, 2) + "\n");
@@ -249,7 +256,13 @@ export async function writeHandoff({ brief, root, outDir }) {
   return { outDir: out, files: files.size };
 }
 
-export function figmaMakePrompt(content, tokens, provenance, designMethod) {
+export function figmaMakePrompt(
+  content,
+  tokens,
+  provenance,
+  designMethod,
+  discoveryMethod,
+) {
   if (!designMethod?.trim())
     throw new Error("A self-contained design method is required");
   return `# Build this Barcelona business website
@@ -269,6 +282,10 @@ Create a functional, responsive PRIVATE DRAFT website for the business described
 ## Design method
 
 ${designMethod}
+
+## Local discovery method
+
+${discoveryMethod || "Keep public facts readable in initial HTML with truthful metadata; preserve draft noindex. Listings and indexing require separate owner-authorized work. No ranking or AI citation is guaranteed."}
 
 ## Actual content
 

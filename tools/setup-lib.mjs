@@ -23,6 +23,7 @@ const skillNames = [
   "bcn-sites-handoff",
   "bcn-figma-handoff",
   "bcn-release-review",
+  "bcn-local-discovery",
 ];
 export async function packageBytes(source) {
   const root = await realpath(source);

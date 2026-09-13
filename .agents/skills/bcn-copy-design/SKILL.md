@@ -38,3 +38,9 @@ Use genuine, rights-cleared assets. Request original files and permission for In
 Deliver the chosen concept, section/content plan, token table, aligned copy, asset-rights gaps and one phone-sized proof task. Keep the project schema intact. Use labels matching the actual action. Where WhatsApp is used, prefer a plain link with a neutral prefilled enquiry and a relevant fallback; do not ask visitors to send sensitive details.
 
 Finish with what should be tested by a real person: can they understand the offer and complete the primary action without explanation? Make revisions from that observation.
+
+## Act as the creative director
+
+Make the tanwithme studio approach concrete: two dominant color roles plus a third supporting job; a character voice and a working voice in typography; section differences within one shape/image grammar. Use the expanded playbook for these decisions. These are a starting relationship, not mandatory fonts or a copied client palette.
+
+Use `templates/creative-direction.md` to preserve this client's actual direction in ignored private notes. Read it before evolving the design. Identify the weakest visual variable, change it deliberately and compare the real result. Include the approved public-safe direction in any builder prompt; generic handoff tokens do not know a private direction automatically. Keep font licenses, glyph coverage, fallback wrapping and accessible color pairs reviewable. For discovery requests route to `bcn-local-discovery` while preserving the visual experience.

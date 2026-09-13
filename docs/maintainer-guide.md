@@ -73,3 +73,14 @@ Private data belongs in ignored `private/` or `clients/`, never in screenshots o
 `docs/designer-playbook.md` is the canonical standalone design method. The design skill reads it; `writeHandoff` embeds it into all three builder prompts. Do not maintain separate shortened copies that lose the protected idea or review loop. Missing method content must stop export rather than silently producing a generic prompt. Regenerate handoffs after a method change.
 
 Run the [design review](../templates/design-review.md) on source/CSS changes. Keep functional checks distinct from aesthetic judgment. Existing studio installs are preserved on rerun: compare and back up before explicitly updating one. This repository update does not silently upgrade previously installed studios or client sites.
+
+
+## Discovery metadata and checks
+
+Run `npm run check:discovery` after the current brief's build. It inspects local generated language pages, metadata, structured facts, robots and sitemap. A draft passes only as intentionally noindex; a real `live` brief must first satisfy existing release checks. A pass does not verify public HTTP/CDN behavior, a business listing, indexing or an AI citation.
+
+`src/discovery.mjs` emits social metadata and safely serialized JSON-LD only for live, validated briefs. The same stable business identity is used in all languages. Public premises use LocalBusiness with the supplied address; service-area businesses use Organization without an address. Barber/trades catalogue Service nodes use visible localized text and shared prices, omitting unknown prices. Hours, precise geo-coordinates and extra profile URLs are deliberately not inferred. Existing generic live robots rules allow compliant crawlers broadly; honor a separate owner training-access choice explicitly.
+
+Handoffs embed both the canonical design method and `docs/local-discovery.md`. The copilot should add the public-safe client-specific creative direction before sending to a different builder. Neither exported prompts nor this checker configure a provider account. See [local discovery](local-discovery.md).
+
+The crawler check evaluates common robots rules for Googlebot, bingbot and OAI-SearchBot on the root and three language home paths. A separate GPTBot training block is allowed. An intentional search opt-out can fail this discoverability expectation: preserve the owner's choice and report the exclusion rather than undoing it to get a pass. This is not a complete robots conformance test or evidence of an actual provider crawl.

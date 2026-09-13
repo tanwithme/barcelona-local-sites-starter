@@ -32,3 +32,10 @@ A novice should not need expert taste to know the next useful move. The copilot 
 ## Where this can fail
 
 The agent can still imitate the examples, overuse organic shapes, or declare an attractive draft successful without visitor evidence. Use the [design review](../templates/design-review.md) to catch those failures. Preserve the source snapshot; test a small change; roll it back if the protected quality is lost. Native-language acceptance, client satisfaction and enquiry outcomes require real people and are not established by this repository update.
+
+
+## Extension: 13 September 2026
+
+The source work later exposed a discovery gap: an active service business without public premises still needed owner-controlled profile setup; website verification and locale indexing had different states. The reusable lesson is to separate technical discovery, listing ownership and actual customer outcomes, and to keep progress moving while owner verification is pending. This pack does not copy the client's profile data or present historical indexing observations as current facts.
+
+The color/font lesson is now operational: two dominant roles and a supporting third, plus character and working type roles. A source pairing of expressive grotesque with a quiet sans illustrates that relationship. It is not a universal type prescription. The copilot preserves a client-specific creative direction across revisions and exported prompts, and a small color/type lab makes the choices visible. One dedicated discovery skill is added; the existing design skill remains the creative director rather than multiplying roles.

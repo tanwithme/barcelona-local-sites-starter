@@ -14,7 +14,7 @@ En **Codex** o **ChatGPT Work de escritorio con acceso a archivos locales**, peg
 Configura https://github.com/tanwithme/barcelona-local-sites-starter en mi Escritorio. Lee INSTALL.md y realiza la configuración. Soy principiante: abre el proyecto, carga AGENTS.md y las skills, comprueba la demo y acompáñame como copilot para ofrecer webs a negocios de Barcelona. Ayúdame paso a paso, guarda nuestro progreso y prepara prompts completos para Figma Make cuando los necesite. No publiques, compres ni contactes a nadie durante la configuración.
 ```
 
-El asistente prepara **Barcelona Sites Studio**: instrucciones, seis skills, demo, prompts para Figma Make, notas de progreso y creación de proyectos separados para cada cliente. Después empieza contigo una primera práctica. No tienes que elegir ni instalar las skills una a una.
+El asistente prepara **Barcelona Sites Studio**: instrucciones, siete skills, demo, prompts para Figma Make, notas de progreso y creación de proyectos separados para cada cliente. Después empieza contigo una primera práctica. No tienes que elegir ni instalar las skills una a una.
 
 Puede necesitar que autorices una carpeta o selecciones el proyecto en la app. Si la conversación no tiene acceso local, te indicará cómo pasar a Work/Codex. Si este repositorio es privado, necesitas acceso de GitHub o el ZIP compartido por su propietario. [Qué hace la configuración](INSTALL.md)
 
@@ -30,7 +30,7 @@ Puede necesitar que autorices una carpeta o selecciones el proyecto en la app. S
 | Continuar mi servicio y clientes | [Copilot del negocio](docs/service-copilot.md) |
 | Empezar o entender un error | [Guía para conversar](START-HERE.md) · [Ayuda](docs/help.md) |
 | Aprender a mi ritmo | [Camino en español, català y English](docs/learning-path.md) |
-| Copiar un prompt concreto | [8 prompts](prompts/) |
+| Copiar un prompt concreto | [9 prompts](prompts/) |
 | Hablar con un negocio y acordar el trabajo | [Alcance y precio](docs/scope-and-pricing.md) · [Ficha breve](templates/client-intake.md) |
 | Decidir qué necesita la web | [Mínimos de Barcelona](docs/barcelona-requirements.md) · [Referencias investigadas](docs/research-barcelona.md) |
 | Diseñar con intención | [Sistema adaptable](docs/design-system.md) |
@@ -38,7 +38,7 @@ Puede necesitar que autorices una carpeta o selecciones el proyecto en la app. S
 | Revisar antes de entregar | [Registro de revisión](templates/release-record.md) |
 | Entender la marca tanwithme | [Procedencia e investigación](docs/provenance-and-research.md) |
 
-Hay seis habilidades originales para agentes, tres ejemplos ficticios y un generador estático sin dependencias externas. La web funciona sin JavaScript y genera recorridos completos en catalán, español e inglés. Las traducciones de ejemplo son borradores revisados por IA; una persona competente debe revisar el contenido real antes de publicar.
+Hay siete habilidades originales para agentes, tres ejemplos ficticios y un generador estático sin dependencias externas. La web funciona sin JavaScript y genera recorridos completos en catalán, español e inglés. Las traducciones de ejemplo son borradores revisados por IA; una persona competente debe revisar el contenido real antes de publicar.
 
 ## Si tienes un asistente de programación
 
@@ -69,3 +69,9 @@ Este repositorio entrega una herramienta de inicio y ejemplos, no una web comerc
 ## Diseñar con carácter
 
 El copilot protege la idea del negocio, elige una dirección coherente y revisa la web real. Aprende una decisión cada vez. [Design method](docs/designer-playbook.md) · [Three worked directions](docs/design-worlds.md) · [What changed](docs/design-learning-audit.md). The detailed references are in English; the copilot explains and applies them in your chosen language.
+
+## El enfoque tanwithme studio
+
+Dos colores principales y un tercero de apoyo; tipografía con carácter y lectura fácil; secciones coherentes con ritmos diferentes. El copilot también prepara fichas locales y revisa la búsqueda y la lectura por agentes, sin prometer posiciones.
+
+[Creative direction](docs/designer-playbook.md) · [Color and type lab](docs/studio-lab.html) · [Local discovery](docs/local-discovery.md) · [Discovery prompt](prompts/09-discovery.md).
